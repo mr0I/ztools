@@ -1,0 +1,533 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zeus Tools\n"
+"POT-Creation-Date: 2020-06-08 15:16-0700\n"
+"PO-Revision-Date: 2020-06-08 15:16-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ztools.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: planet.php:11
+msgid "Planet"
+msgstr "سیاره سیسوگ"
+
+#: planet.php:12
+msgid "link"
+msgstr "لینک"
+
+#: planet.php:13 planet.php:14
+msgid "add link"
+msgstr "افزودن لینک"
+
+#: planet.php:15
+msgid "new link"
+msgstr "لینک جدید"
+
+#: planet.php:16
+msgid "edit link"
+msgstr "ویرایش لینک"
+
+#: planet.php:17
+msgid "show link"
+msgstr "نمایش لینک"
+
+#: planet.php:18
+msgid "all links"
+msgstr "همه لینک ها"
+
+#: planet.php:19
+msgid "search link"
+msgstr "جستجوی لینک"
+
+#: planet.php:21
+msgid "links not found"
+msgstr "لینک پیدا نشد"
+
+#: planet.php:22
+msgid "not link found in trash"
+msgstr "لینکی در سطل زباله یافت نشد"
+
+#: planet.php:48 planet.php:50
+msgid "Planet Category"
+msgstr "دسته بندی سیاره"
+
+#: planet.php:49
+msgid "category"
+msgstr "دسته"
+
+#: planet.php:51
+msgid "all category"
+msgstr "همه دسته ها"
+
+#: planet.php:52
+msgid "edit category"
+msgstr "ویرایش دسته"
+
+#: planet.php:53
+msgid "view category"
+msgstr "مشاهده دسته"
+
+#: planet.php:54
+msgid "update category"
+msgstr "ویرایش دسته"
+
+#: planet.php:55
+msgid "add new category"
+msgstr "افزودن دسته جدید"
+
+#: planet.php:56
+msgid "new category name"
+msgstr "نام دسته جدید"
+
+#: planet.php:57
+msgid "parent"
+msgstr "والد"
+
+#: planet.php:58
+msgid "parent:"
+msgstr "والد:"
+
+#: planet.php:59
+msgid "search"
+msgstr "جستجو"
+
+#: planet.php:87
+msgid "tags"
+msgstr "برچسب ها"
+
+#: planet.php:88
+msgid "tag"
+msgstr "تگ"
+
+#: planet.php:89
+msgid "Planet Tag"
+msgstr "تگ سیاره"
+
+#: planet.php:90
+msgid "all tag"
+msgstr "همه تگ ها"
+
+#: planet.php:91
+msgid "edit tag"
+msgstr "ویرایش تگ"
+
+#: planet.php:92
+msgid "view tag"
+msgstr "مشاهده تگ"
+
+#: planet.php:93
+msgid "update tag"
+msgstr "بروزرسانی تگ"
+
+#: planet.php:94
+msgid "add new tag"
+msgstr "افزودن تگ جدید"
+
+#: planet.php:95
+msgid "new tag name"
+msgstr "نام تگ جدید"
+
+#: planet.php:98
+msgid "search tag"
+msgstr "جستجوی تگ"
+
+#: planet.php:99 planet.php:100
+msgid "popular tag"
+msgstr "تگ محبوب"
+
+#: planet.php:101
+msgid "separate tag with commas"
+msgstr "جدا کردن تگ با کامنت"
+
+#: planet.php:102
+msgid "choose from most used"
+msgstr "استفاده از میان پرکابردها"
+
+#: planet.php:103
+msgid "not found"
+msgstr "یافت نشد"
+
+#: planet.php:120
+msgid "URL"
+msgstr "آدرس اینترنتی"
+
+#: planet.php:129
+msgid "like:"
+msgstr "لایک  :"
+
+#: planet.php:427 planet.php:438 planet.php:486 planet.php:606
+msgid "Last Planets"
+msgstr "آخرین مطالب سیاره"
+
+#: planet.php:429
+msgid "Show last planet posts by ..."
+msgstr "نمایش آخرین مطالب سیاره بر اساس تاریخ، تعداد کامنت و ..."
+
+#: planet.php:444 planet.php:587
+msgid "title"
+msgstr "عنوان"
+
+#: planet.php:449
+msgid "Sorting By"
+msgstr "مرتب سازی بر اساس"
+
+#: planet.php:452
+msgid "Date"
+msgstr "تاریخ"
+
+#: planet.php:453
+msgid "Likes Count"
+msgstr "تعداد لایک"
+
+#: planet.php:454
+msgid "Comments Count"
+msgstr "تعداد کامنت"
+
+#: planet.php:458
+msgid "Ascending"
+msgstr "صعودی"
+
+#: planet.php:460
+msgid "Descending"
+msgstr "نزولی"
+
+#: planet.php:464
+msgid "Count"
+msgstr "تعداد"
+
+#: planet.php:545
+msgid "Comments"
+msgstr "دیدگاه"
+
+#: planet.php:549
+msgid "Likes"
+msgstr "لایک"
+
+#: planet.php:574 planet.php:584
+msgid "Planets Categories"
+msgstr "دسته بندی سیاره"
+
+#: planet.php:576
+msgid "Show Planet Categories."
+msgstr "نمایش دسته بندی سیاره"
+
+#: views/Add_planet.php:9 views/Edit_planet.php:9 views/Show_planets.php:108
+msgid "You should login before accessing this page."
+msgstr "برای مشاهده این صفحه باید عضو سایت باشید."
+
+#: views/Add_planet.php:9 views/Edit_planet.php:9 views/Show_planets.php:108
+msgid "Login to sisoog"
+msgstr "ورود به سیسوگ"
+
+#: views/Add_planet.php:28
+msgid "Add Link Form"
+msgstr "فرم افزودن لینک"
+
+#: views/Add_planet.php:29
+msgid "Show My Links"
+msgstr "همه مطالب من"
+
+#: views/Add_planet.php:34 views/Edit_planet.php:56
+msgid "Planet Title"
+msgstr "عنوان"
+
+#: views/Add_planet.php:38 views/Edit_planet.php:61
+msgid "Please enter post title"
+msgstr "عنوان مطلب را وارد کنید"
+
+#: views/Add_planet.php:51 views/Edit_planet.php:66
+msgid "Planet Content"
+msgstr "محتوا"
+
+#: views/Add_planet.php:54 views/Edit_planet.php:74
+msgid "Max length equals 500"
+msgstr "حداکثر طول مجاز برابر 7000  کلمه می باشد"
+
+#: views/Add_planet.php:59 views/Edit_planet.php:79
+msgid "Please enter post content"
+msgstr "توضیحات مطلب را وارد کنید"
+
+#: views/Add_planet.php:63 views/Edit_planet.php:83
+msgid "Text entered is longer than allowed"
+msgstr "طول متن وارد شده بیشتر از حد مجاز است"
+
+#: views/Add_planet.php:68 views/Edit_planet.php:88
+msgid "Planet URL"
+msgstr "لینک منبع"
+
+#: views/Add_planet.php:70 views/Edit_planet.php:91
+msgid "like: https://example.com/note/index.html"
+msgstr "مانند:  https://example.com/note/index.html"
+
+#: views/Add_planet.php:74 views/Edit_planet.php:95
+msgid "The link you entered is not valid"
+msgstr "لینک وارد شده معتبر نیست"
+
+#: views/Add_planet.php:79 views/Edit_planet.php:100
+msgid "Planet Tags"
+msgstr "برچسب ها"
+
+#: views/Add_planet.php:81 views/Edit_planet.php:102
+msgid "Press Enter to add new tag"
+msgstr "برای افزودن برچسب جدید از کلید Enter استفاده کنید"
+
+#: views/Add_planet.php:88 views/Edit_planet.php:119
+msgid "Planet Categories"
+msgstr "دسته بندی"
+
+#: views/Add_planet.php:89 views/Edit_planet.php:120
+msgid "Choose categories ..."
+msgstr "دسته بندی دلخواهتان را انتخاب کنید ..."
+
+#: views/Add_planet.php:100 views/Add_planet.php:116
+msgid "Submit for review"
+msgstr "ارسال برای بازبینی"
+
+#: views/Add_planet.php:105 views/Edit_planet.php:151
+msgid "Correct form errors first!"
+msgstr "خطاهای موجود را تصحیح کنید!"
+
+#: views/Add_planet.php:110 views/Edit_planet.php:156
+msgid "You can register up to 5 tags at the most!"
+msgstr "شما حداکثر میتوانید 5 برچسب ثبت کنید!"
+
+#: views/Add_planet.php:111 views/Edit_planet.php:157
+msgid "The tag you entered is a duplicate!"
+msgstr "برچسب وارد شده تکراری است!"
+
+#: views/Add_planet.php:112 views/Edit_planet.php:158
+msgid "The minimum number of letters per label is 3!"
+msgstr "حداقل تعداد حروف برای هر برچسب برابر 3 است!"
+
+#: views/Add_planet.php:113 views/Edit_planet.php:159
+msgid "New entry successfully recorded"
+msgstr "مطلب جدید با موفقیت ثبت شد"
+
+#: views/Add_planet.php:114 views/Edit_planet.php:160
+msgid "Error sending information"
+msgstr "خطا در ارسال اطلاعات"
+
+#: views/Add_planet.php:115 views/Edit_planet.php:161
+msgid "Content editing done successfully"
+msgstr "ویرایش مطلب با موفقیت انجام شد"
+
+#: views/Add_planet.php:117
+msgid "Submitting"
+msgstr "در حال ثبت ..."
+
+#: views/Edit_planet.php:52
+msgid "Edit Link Form"
+msgstr "فرم ویرایش مطلب"
+
+#: views/Edit_planet.php:144
+msgid "Back to planets list"
+msgstr "بازگشت به لیست مطالب"
+
+#: views/Edit_planet.php:145 views/Edit_planet.php:162
+#: views/Show_planets.php:196
+msgid "Edit"
+msgstr "ویرایش"
+
+#: views/Edit_planet.php:163
+msgid "Editing"
+msgstr "در حال ویرایش..."
+
+#: views/Show_planets.php:76
+msgid "First"
+msgstr "صفحه اول"
+
+#: views/Show_planets.php:78
+msgid "Previous Page"
+msgstr "صفحه قبل"
+
+#: views/Show_planets.php:94
+msgid "Next Page"
+msgstr "صفحه بعد"
+
+#: views/Show_planets.php:98
+msgid "Last"
+msgstr "صفحه آخر"
+
+#: views/Show_planets.php:133
+msgid "Planets List"
+msgstr "لیست مطالب"
+
+#: views/Show_planets.php:135
+msgid "Add Link"
+msgstr "افزودن مطلب جدید"
+
+#: views/Show_planets.php:147
+msgid "Row Number"
+msgstr "ردیف"
+
+#: views/Show_planets.php:148
+msgid "Title"
+msgstr "عنوان"
+
+#: views/Show_planets.php:149
+msgid "Post Status"
+msgstr "وضعیت"
+
+#: views/Show_planets.php:150
+msgid "Operations"
+msgstr "عملیات"
+
+#: views/Show_planets.php:179
+msgid "Pending"
+msgstr "در انتظار تایید"
+
+#: views/Show_planets.php:181
+msgid "Published"
+msgstr "منتشر شده"
+
+#: views/Show_planets.php:190
+msgid "Remove Planet"
+msgstr "حذف"
+
+#: views/Show_planets.php:204
+msgid "Source Link"
+msgstr "لینک منبع"
+
+#: views/Show_planets.php:212
+msgid "Go to link"
+msgstr "مشاهده"
+
+#: views/Show_planets.php:218
+msgid "Number of comments: "
+msgstr "دیدگاه ها:"
+
+#: views/Show_planets.php:226
+msgid "Number of likes: "
+msgstr "لایک ها:"
+
+#: views/Show_planets.php:262
+msgid "Are you sure to delete this item?"
+msgstr "از پاک کردن مطلب انتخابی اطمینان دارید؟"
+
+#: views/Show_planets.php:264
+msgid "No"
+msgstr "خیر"
+
+#: views/Show_planets.php:265
+msgid "Yes"
+msgstr "بله"
+
+#: views/Show_planets.php:271
+msgid "Deletion completed successfully"
+msgstr "حذف با موفقیت انجام شد"
+
+#: views/Show_planets.php:272
+msgid "Error deleting item!"
+msgstr "خطا در پاک کردن آیتم!"
+
+#: views/Show_planets.php:280
+msgid "No Post Exists"
+msgstr "تاکنون هیچ مطلبی ارسال نکرده اید"
+
+#: views/admin/admin_process.php:5
+msgid "Ztools Settings"
+msgstr "تنظیمات"
+
+#: views/admin/admin_process.php:7
+msgid "User Panel Settings"
+msgstr "تنظیمات بخش کاربری"
+
+#: views/admin/admin_process.php:9
+msgid "Add Planet Url"
+msgstr "آدرس برگه افزودن پلنت"
+
+#: views/admin/admin_process.php:11
+msgid "Edit Planet Url"
+msgstr "آدرس برگه ویرایش پلنت"
+
+#: views/admin/admin_process.php:13
+msgid "Show Planets Url"
+msgstr "آدرس برگه نمایش پلنت های کاربر"
+
+#: views/admin/admin_process.php:15 views/admin/admin_process.php:22
+msgid "Posts Per Page"
+msgstr "تعداد پست ها در هر صفحه"
+
+#: views/admin/admin_process.php:18
+msgid "Planet Settings"
+msgstr "تنظیمات بخش پلنت"
+
+#: views/admin/admin_process.php:20
+msgid "excerpt Length"
+msgstr "طول خلاصه متن (کلمه)"
+
+#: views/admin/admin_process.php:24
+msgid "Posts Per Page (for category)"
+msgstr "تعداد پست ها در هر صفحه (برای دسته بندی)"
+
+#: views/admin/admin_process.php:26
+msgid "Login Url"
+msgstr "لینک ورود به سایت"
+
+#. Plugin Name of the plugin/theme
+msgid "Zeus Tools"
+msgstr "ابزارهای زئوس"
+
+#. Plugin URI of the plugin/theme
+msgid "https://sisoog.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Zeus Light Tools For Sisoog WebSite."
+msgstr "ابزارهای سبک زئوس برای سایت سیسوگ."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://sisoog.com/user/zeus\">Zeus</a>"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.sisoog.com"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Max length equals 500"
+#~ msgid "Max length equals200"
+#~ msgstr "حداکثر طول مجاز برابر 7000  کاراکتر می باشد"
+
+#, fuzzy
+#~| msgid "Max length equals 500"
+#~ msgid "Max length equals"
+#~ msgstr "حداکثر طول مجاز برابر 7000  کاراکتر می باشد"
+
+#~ msgid "Captcha Answer"
+#~ msgstr "عبارت امنیتی"
+
+#~ msgid "Type Captcha in top input"
+#~ msgstr "کد امنیتی را در کادر بالا وارد کنید"
+
+#~ msgid "(Refresh)"
+#~ msgstr "(تازه سازی)"
+
+#~ msgid "Planet Picture"
+#~ msgstr "تصویر مطلب"
+
+#~ msgid "Select File"
+#~ msgstr "انتخاب فایل"
+
+#~ msgid "Cancel"
+#~ msgstr "لغو"
+
+#~ msgid "Result of"
+#~ msgstr "حاصل عبارت"
+
+#~ msgid "Seperate tags with commas"
+#~ msgstr "برچسب ها را با کامای لاتین (,) از هم جدا کنید"

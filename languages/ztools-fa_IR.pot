@@ -1,0 +1,403 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Zeus Tools\n"
+"POT-Creation-Date: 2020-04-25 13:59-0700\n"
+"PO-Revision-Date: 2020-03-04 12:55-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ztools.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: planet.php:11
+msgid "Planet"
+msgstr ""
+
+#: planet.php:12
+msgid "link"
+msgstr ""
+
+#: planet.php:13 planet.php:14
+msgid "add link"
+msgstr ""
+
+#: planet.php:15
+msgid "new link"
+msgstr ""
+
+#: planet.php:16
+msgid "edit link"
+msgstr ""
+
+#: planet.php:17
+msgid "show link"
+msgstr ""
+
+#: planet.php:18
+msgid "all links"
+msgstr ""
+
+#: planet.php:19
+msgid "search link"
+msgstr ""
+
+#: planet.php:21
+msgid "links not found"
+msgstr ""
+
+#: planet.php:22
+msgid "not link found in trash"
+msgstr ""
+
+#: planet.php:48 planet.php:50
+msgid "Planet Category"
+msgstr ""
+
+#: planet.php:49
+msgid "category"
+msgstr ""
+
+#: planet.php:51
+msgid "all category"
+msgstr ""
+
+#: planet.php:52
+msgid "edit category"
+msgstr ""
+
+#: planet.php:53
+msgid "view category"
+msgstr ""
+
+#: planet.php:54
+msgid "update category"
+msgstr ""
+
+#: planet.php:55
+msgid "add new category"
+msgstr ""
+
+#: planet.php:56
+msgid "new category name"
+msgstr ""
+
+#: planet.php:57
+msgid "parent"
+msgstr ""
+
+#: planet.php:58
+msgid "parent:"
+msgstr ""
+
+#: planet.php:59
+msgid "search"
+msgstr ""
+
+#: planet.php:87
+msgid "tags"
+msgstr ""
+
+#: planet.php:88
+msgid "tag"
+msgstr ""
+
+#: planet.php:89
+msgid "Planet Tag"
+msgstr ""
+
+#: planet.php:90
+msgid "all tag"
+msgstr ""
+
+#: planet.php:91
+msgid "edit tag"
+msgstr ""
+
+#: planet.php:92
+msgid "view tag"
+msgstr ""
+
+#: planet.php:93
+msgid "update tag"
+msgstr ""
+
+#: planet.php:94
+msgid "add new tag"
+msgstr ""
+
+#: planet.php:95
+msgid "new tag name"
+msgstr ""
+
+#: planet.php:98
+msgid "search tag"
+msgstr ""
+
+#: planet.php:99 planet.php:100
+msgid "popular tag"
+msgstr ""
+
+#: planet.php:101
+msgid "separate tag with commas"
+msgstr ""
+
+#: planet.php:102
+msgid "choose from most used"
+msgstr ""
+
+#: planet.php:103
+msgid "not found"
+msgstr ""
+
+#: planet.php:120
+msgid "URL"
+msgstr ""
+
+#: planet.php:129
+msgid "like:"
+msgstr ""
+
+#: views/Add_planet.php:9 views/Edit_planet.php:9 views/Show_planets.php:105
+msgid "You should login before accessing this page."
+msgstr ""
+
+#: views/Add_planet.php:9 views/Edit_planet.php:9 views/Show_planets.php:105
+msgid "Login to sisoog"
+msgstr ""
+
+#: views/Add_planet.php:28
+msgid "Add Link Form"
+msgstr ""
+
+#: views/Add_planet.php:29
+msgid "Show My Links"
+msgstr ""
+
+#: views/Add_planet.php:34 views/Edit_planet.php:56
+msgid "Planet Title"
+msgstr ""
+
+#: views/Add_planet.php:38 views/Edit_planet.php:61
+msgid "Please enter post title"
+msgstr ""
+
+#: views/Add_planet.php:51 views/Edit_planet.php:66
+msgid "Planet Content"
+msgstr ""
+
+#: views/Add_planet.php:54 views/Edit_planet.php:74
+msgid "Max length equals 500"
+msgstr ""
+
+#: views/Add_planet.php:59 views/Edit_planet.php:79
+msgid "Please enter post content"
+msgstr ""
+
+#: views/Add_planet.php:63 views/Edit_planet.php:83
+msgid "Text entered is longer than allowed"
+msgstr ""
+
+#: views/Add_planet.php:68 views/Edit_planet.php:88
+msgid "Planet URL"
+msgstr ""
+
+#: views/Add_planet.php:70 views/Edit_planet.php:91
+msgid "like: https://example.com/note/index.html"
+msgstr ""
+
+#: views/Add_planet.php:74 views/Edit_planet.php:95
+msgid "The link you entered is not valid"
+msgstr ""
+
+#: views/Add_planet.php:79 views/Edit_planet.php:100
+msgid "Planet Tags"
+msgstr ""
+
+#: views/Add_planet.php:81 views/Edit_planet.php:102
+msgid "Press Enter to add new tag"
+msgstr ""
+
+#: views/Add_planet.php:88 views/Edit_planet.php:119
+msgid "Planet Categories"
+msgstr ""
+
+#: views/Add_planet.php:89 views/Edit_planet.php:120
+msgid "Choose categories ..."
+msgstr ""
+
+#: views/Add_planet.php:100 views/Add_planet.php:116
+msgid "Submit for review"
+msgstr ""
+
+#: views/Add_planet.php:105 views/Edit_planet.php:151
+msgid "Correct form errors first!"
+msgstr ""
+
+#: views/Add_planet.php:110 views/Edit_planet.php:156
+msgid "You can register up to 5 tags at the most!"
+msgstr ""
+
+#: views/Add_planet.php:111 views/Edit_planet.php:157
+msgid "The tag you entered is a duplicate!"
+msgstr ""
+
+#: views/Add_planet.php:112 views/Edit_planet.php:158
+msgid "The minimum number of letters per label is 3!"
+msgstr ""
+
+#: views/Add_planet.php:113 views/Edit_planet.php:159
+msgid "New entry successfully recorded"
+msgstr ""
+
+#: views/Add_planet.php:114 views/Edit_planet.php:160
+msgid "Error sending information"
+msgstr ""
+
+#: views/Add_planet.php:115 views/Edit_planet.php:161
+msgid "Content editing done successfully"
+msgstr ""
+
+#: views/Add_planet.php:117
+msgid "Submitting"
+msgstr ""
+
+#: views/Edit_planet.php:52
+msgid "Edit Link Form"
+msgstr ""
+
+#: views/Edit_planet.php:144
+msgid "Back to planets list"
+msgstr ""
+
+#: views/Edit_planet.php:145 views/Edit_planet.php:162
+#: views/Show_planets.php:193
+msgid "Edit"
+msgstr ""
+
+#: views/Edit_planet.php:163
+msgid "Editing"
+msgstr ""
+
+#: views/Show_planets.php:73
+msgid "First"
+msgstr ""
+
+#: views/Show_planets.php:75
+msgid "Previous Page"
+msgstr ""
+
+#: views/Show_planets.php:91
+msgid "Next Page"
+msgstr ""
+
+#: views/Show_planets.php:95
+msgid "Last"
+msgstr ""
+
+#: views/Show_planets.php:130
+msgid "Planets List"
+msgstr ""
+
+#: views/Show_planets.php:132
+msgid "Add Link"
+msgstr ""
+
+#: views/Show_planets.php:144
+msgid "Row Number"
+msgstr ""
+
+#: views/Show_planets.php:145
+msgid "Title"
+msgstr ""
+
+#: views/Show_planets.php:146
+msgid "Post Status"
+msgstr ""
+
+#: views/Show_planets.php:147
+msgid "Operations"
+msgstr ""
+
+#: views/Show_planets.php:176
+msgid "Pending"
+msgstr ""
+
+#: views/Show_planets.php:178
+msgid "Published"
+msgstr ""
+
+#: views/Show_planets.php:187
+msgid "Remove Planet"
+msgstr ""
+
+#: views/Show_planets.php:201
+msgid "Source Link"
+msgstr ""
+
+#: views/Show_planets.php:209
+msgid "Go to link"
+msgstr ""
+
+#: views/Show_planets.php:215
+msgid "Number of comments: "
+msgstr ""
+
+#: views/Show_planets.php:223
+msgid "Number of likes: "
+msgstr ""
+
+#: views/Show_planets.php:259
+msgid "Are you sure to delete this item?"
+msgstr ""
+
+#: views/Show_planets.php:261
+msgid "No"
+msgstr ""
+
+#: views/Show_planets.php:262
+msgid "Yes"
+msgstr ""
+
+#: views/Show_planets.php:268
+msgid "Deletion completed successfully"
+msgstr ""
+
+#: views/Show_planets.php:269
+msgid "Error deleting item!"
+msgstr ""
+
+#: views/Show_planets.php:277
+msgid "No Post Exists"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Zeus Tools"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://sisoog.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Zeus Light Tools For Sisoog WebSite."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://sisoog.com/user/zeus\">Zeus</a>"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.sisoog.com"
+msgstr ""

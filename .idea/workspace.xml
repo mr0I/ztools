@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ztools.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="44" column="67" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="67" />
+              <folding>
+                <element signature="e#6#290#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/planet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+              <folding>
+                <element signature="n#ZtoolsRegisterHotLinkMetaBox#0;n#!!top" />
+                <element signature="n#ZtoolsPlanetUrlMetabox#0;n#!!top" />
+                <element signature="n#Ztools_Deactivation#0;n#!!top" />
+                <element signature="n#Ztools_Dashboard#0;n#!!top" />
+                <element signature="n#Ztools_About#0;n#!!top" />
+                <element signature="n#__construct#0;n#Ztools_last_planets#0;n#!!top" />
+                <element signature="n#Ztools_planets_Categories#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/Show_planets.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2191">
+              <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+              <folding>
+                <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/admin_process.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4536">
+              <caret line="189" column="28" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$args</find>
+      <find>registered</find>
+      <find>date_created</find>
+      <find>comments_count</find>
+      <find>Descending By</find>
+      <find>wp_bootstrap4_pagination</find>
+      <find>local</find>
+      <find>192.168.30.99</find>
+      <find>planet-category</find>
+      <find>ztools_planet_postPP</find>
+      <find>side</find>
+      <find>Ztools_planet_posts_pp_callback</find>
+      <find>chosen</find>
+      <find>wp_verify_nonce</find>
+      <find>submit_planet_frm</find>
+      <find>post_title</find>
+      <find>edit_planet_frm</find>
+      <find>$wpdb-&gt;insert</find>
+      <find>-&gt;insert</find>
+      <find>jalali</find>
+      <find>jDate</find>
+      <find>$wpdb-&gt;get_results</find>
+      <find>WHERE</find>
+      <find>add_role</find>
+      <find>role</find>
+      <find>ztools_add_planet_url</find>
+      <find>entry-meta-list</find>
+      <find>meta-author</find>
+      <find>planet_right</find>
+      <find>hovered-social-icons</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>date</replace>
+      <replace>comment_count</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\wordpress\wp-content\plugins\ztools</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/views/Settings.php" />
+        <option value="$PROJECT_DIR$/views/Edit_planet.php" />
+        <option value="$PROJECT_DIR$/views/Add_planet.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/views/admin/admin_process.php" />
+        <option value="$PROJECT_DIR$/ztools.php" />
+        <option value="$PROJECT_DIR$/planet.php" />
+        <option value="$PROJECT_DIR$/views/Show_planets.php" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ztools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ztools" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ztools" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="" />
+      <created>1587847864661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587847864661</updated>
+      <workItem from="1587847866432" duration="9578000" />
+      <workItem from="1587915539206" duration="4737000" />
+      <workItem from="1587920773104" duration="15805000" />
+      <workItem from="1587941981140" duration="1454000" />
+      <workItem from="1591650938349" duration="2122000" />
+      <workItem from="1608964380759" duration="1270000" />
+      <workItem from="1609049726858" duration="3263000" />
+      <workItem from="1610775664297" duration="141000" />
+      <workItem from="1610785268578" duration="951000" />
+      <workItem from="1610968212629" duration="165000" />
+      <workItem from="1617431083172" duration="4000" />
+      <workItem from="1617604956156" duration="2985000" />
+      <workItem from="1617688987641" duration="1322000" />
+      <workItem from="1617694952821" duration="1944000" />
+      <workItem from="1618202056605" duration="60000" />
+      <workItem from="1619586637606" duration="28000" />
+      <workItem from="1619604135373" duration="618000" />
+      <workItem from="1620470025251" duration="179000" />
+      <workItem from="1620623281332" duration="6000" />
+      <workItem from="1623473060635" duration="1798000" />
+      <workItem from="1623567867441" duration="4280000" />
+    </task>
+    <task id="LOCAL-00001" summary="before add settings page">
+      <created>1587847902915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587847902915</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added settings page">
+      <created>1587922176368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587922176368</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added widget 4 planet cats &amp; Latest planets">
+      <created>1587939546600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587939546601</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="52710000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20149253" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.32502708" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="before add settings page" />
+    <MESSAGE value="Added settings page" />
+    <MESSAGE value="Added widget 4 planet cats &amp; Latest planets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added widget 4 planet cats &amp; Latest planets" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>C:\xampp\htdocs\wordpress</wordpressPath>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/Settings.php" />
+    <entry file="file://$PROJECT_DIR$/views/Edit_planet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ztools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="67" />
+          <folding>
+            <element signature="e#6#290#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Add_planet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2352">
+          <caret line="98" column="117" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4536">
+          <caret line="189" column="28" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/admin_process.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Show_planets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2191">
+          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+          <folding>
+            <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <element signature="n#ZtoolsRegisterHotLinkMetaBox#0;n#!!top" />
+            <element signature="n#ZtoolsPlanetUrlMetabox#0;n#!!top" />
+            <element signature="n#Ztools_Deactivation#0;n#!!top" />
+            <element signature="n#Ztools_Dashboard#0;n#!!top" />
+            <element signature="n#Ztools_About#0;n#!!top" />
+            <element signature="n#__construct#0;n#Ztools_last_planets#0;n#!!top" />
+            <element signature="n#Ztools_planets_Categories#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
