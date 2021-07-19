@@ -639,4 +639,25 @@ add_action('widgets_init', function(){
 // Add Widget
 
 
+/* Add Rewrite rules */
+add_action('init', function (){
+	add_rewrite_rule(
+		'@([^/]+)/?$',
+		'index.php?pagename=author_search&s=$matches[1]',
+		'top'
+	);
+});
+add_action('template_redirect', function(){
+	$pageName = get_query_var('pagename');
+
+	if ( $pageName == 'author_search' ) {
+		$author_name = get_query_var('s');
+		include(plugin_dir_path(__FILE__) . 'views/author_posts.php');
+		exit;
+	}
+});
+/* Add Rewrite rules */
+
+
+
 ?>
