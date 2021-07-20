@@ -461,6 +461,34 @@
 	}
 
 
+	/* Start Author Posts */
+	.author-posts-container article{
+		background-color: #ffffff;
+	}
+	.author-posts-container .read-more-section{
+		text-align: left;
+	}
+	.author-posts-container .article-body-container{
+		height: auto !important;
+	}
+	.author-posts-container .page-numbers{
+		background-color: transparent;
+		color: #e5490a;
+		padding: 4px 12px;
+		border-radius: 50px;
+		margin: 0 2px;
+		border: 1px solid #e5490a;
+		font-weight: bold;
+	}
+	.author-posts-container .page-numbers.dots{
+		color: #e5490a;
+	}
+	.author-posts-container .page-numbers.current{
+		background-color: #e5490a;
+		color: #eeeeee;
+	}
+	/* End Author Posts */
+
 
 	/*----------------------------Media Queries----------------------------*/
 

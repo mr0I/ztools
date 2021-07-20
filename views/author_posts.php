@@ -1,7 +1,8 @@
-<?php if ( ! defined( 'ABSPATH' ) ) {die( 'Invalid request.' ); } ?>
+<?php if ( ! defined( 'ABSPATH' ) ) {die( 'Invalid request.' ); }
 
 
-<?php
+require_once plugin_dir_path( __FILE__ ) . '../env.php';
+
 global $wpdb;
 $usersTable = $wpdb->prefix . 'users';
 $postsTable = $wpdb->prefix . 'posts';
@@ -9,30 +10,23 @@ $postsTable = $wpdb->prefix . 'posts';
 $user_id = $wpdb->get_var( "SELECT id FROM $usersTable WHERE display_name='$author_name' ");
 
 $pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
-$limit = 5; // number of rows in page
+$limit =getenv('AUTHOR_POSTS_PAGINATE_COUNT'); // number of rows in page
 $offset = ( $pagenum - 1 ) * $limit;
 $total = $wpdb->get_var( "SELECT COUNT(`id`) FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' ");
 $author_posts = $wpdb->get_results( "SELECT * FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' ORDER BY post_date DESC LIMIT $offset,$limit");
 $num_of_pages = ceil( $total / $limit );
 $numrow = ($pagenum - 1) * $offset + 1;
+
+// Set Custom Title
+global $my_custom_title;
+$my_custom_title = ' نوشته های ' . $author_name;
+get_header();
 ?>
 
-
-
-<div class="main-page-wrapper">
-
-	<div class="page-title page-title-default title-size-default title-design-disable color-scheme-light title-blog" >
-		<div class="container">
-			<div class="yoast-breadcrumb"></div>
-		</div>
-	</div>
-
-
-
-
+<div class="main-page-wrapper m-auto">
 	<div class="container">
-		<div class="row content-layout-wrapper align-items-start">
-			<div class="site-content col-lg-9 col-12 col-md-9" role="main">
+		<div class="row content-layout-wrapper align-items-start ">
+			<div class="site-content col-12 author-posts-container" role="main">
 				<?php
 				foreach ($author_posts as $post){
 					?>
@@ -97,7 +91,7 @@ $numrow = ($pagenum - 1) * $offset + 1;
 
 									<div class="entry-meta wd-entry-meta">
 										<ul class="entry-meta-list">
-											<li class="meta-author">
+											<li class="meta-author" style="display: none">
 												توسط
 												<img data-del="avatar" alt="author-avatar" src="<?= get_avatar_url($post->post_author) ; ?>" class="avatar pp-user-avatar avatar-32 photo lazyloaded" height="32" width="32" data-ll-status="loaded">
 												<a href="https://sisoog.com/author/<?= $author_name ?>/" rel="author">
@@ -145,7 +139,7 @@ $numrow = ($pagenum - 1) * $offset + 1;
 									<div class="entry-content wd-entry-content woodmart-entry-content">
 										<?= $post->post_excerpt ?>
 										<p class="read-more-section">
-											<a class="btn-read-more more-link" href="<?= get_permalink($post->ID); ?>">ادامه مطلب</a>
+											<a class="btn btn-color-primary btn-read-more more-link" href="<?= get_permalink($post->ID); ?>">ادامه مطلب</a>
 										</p>
 									</div><!-- .entry-content -->
 
@@ -172,21 +166,14 @@ $numrow = ($pagenum - 1) * $offset + 1;
 						echo '<div class="tablenav"><div class="tablenav-pages" style="margin: 1em 0">' . $page_links . '</div></div>';
 					}
 					?>
-
-					<!--				<nav class="wd-pagination woodmart-pagination">-->
-					<!--					<ul>-->
-					<!--						<li><span class="current page-numbers">1</span></li><li><a href="https://sisoog.com/category/%D9%85%D9%82%D8%A7%D9%84%D9%87/page/2/" class="page-numbers">2</a></li><li><a href="https://sisoog.com/category/%D9%85%D9%82%D8%A7%D9%84%D9%87/page/3/" class="page-numbers">3</a></li><li><a href="https://sisoog.com/category/%D9%85%D9%82%D8%A7%D9%84%D9%87/page/2/" class="page-numbers">›</a></li><li><a href="https://sisoog.com/category/%D9%85%D9%82%D8%A7%D9%84%D9%87/page/36/" class="page-numbers">»</a></li>-->
-					<!--					</ul>-->
-					<!--				</nav>-->
 				</div>
 			</div><!-- .site-content -->
 
-			<div class="col-lg-3 col-12 col-md-3" >
-				<?php get_sidebar(); ?>
-			</div>
 		</div><!-- .main-page-wrapper -->
 	</div>
 
 </div>
+
+<?php get_footer(); ?>
 
 
