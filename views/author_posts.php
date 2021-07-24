@@ -23,6 +23,12 @@ $my_custom_title = ' نوشته های ' . $author_name;
 get_header();
 ?>
 
+<?php
+if ($user_id === null){
+	?><div class="alert alert-warning w-100 text-center" role="alert">مطلبی برای نمایش وجود ندارد!</div><?php
+}
+?>
+
 <div class="main-page-wrapper m-auto">
 	<div class="container">
 		<div class="row content-layout-wrapper align-items-start ">

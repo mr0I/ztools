@@ -21,8 +21,6 @@ jQuery(document).ready(function($) {
   var edit_btn_text2 = $('input#edit_btn_text2').val();
   // jq translates
 
-
-
   $(".chosen-select").chosen();
 
   try{
