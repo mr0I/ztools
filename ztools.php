@@ -33,6 +33,8 @@ add_action('plugins_loaded', function(){
 define('ZEUS_INC', plugin_dir_path(__FILE__) . 'inc/');
 define('PLANET_JS', plugin_dir_url(__FILE__) . 'js/');
 define('PLANET_CSS', plugin_dir_url(__FILE__) . 'css/');
+
+
  add_action( 'wp_enqueue_scripts', function(){
  	// scripts
  	wp_enqueue_script('chosen_js', PLANET_JS.'chosen.js');

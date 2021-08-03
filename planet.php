@@ -659,5 +659,11 @@ add_action('template_redirect', function(){
 /* Add Rewrite rules */
 
 
+/* Add Metabox */
+define('ZTOOLS_ADMIN_DIR', plugin_dir_path(__FILE__) . 'views/admin/');
+if (is_admin()){
+	require_once ZTOOLS_ADMIN_DIR .'metabox.php';
+}
+/* Add Metabox */
 
-?>
+

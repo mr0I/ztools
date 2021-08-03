@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/admin/metabox.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/metabox_echo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/author_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/author_posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/ztools-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ztools-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/planet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ztools.php" beforeDir="false" afterPath="$PROJECT_DIR$/ztools.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,10 +27,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ztools.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#6#290#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/planet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="649" column="43" selection-start-line="649" selection-start-column="43" selection-end-line="649" selection-end-column="43" />
+            <state relative-caret-position="286">
+              <caret line="665" column="1" lean-forward="true" selection-start-line="665" selection-start-column="1" selection-end-line="665" selection-end-column="1" />
               <folding>
                 <element signature="n#ZtoolsRegisterHotLinkMetaBox#0;n#!!top" />
                 <element signature="n#ZtoolsPlanetUrlMetabox#0;n#!!top" />
@@ -41,12 +56,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/author_posts.php">
+        <entry file="file://$PROJECT_DIR$/views/admin/metabox.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+            <state relative-caret-position="124">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/metabox_echo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#p#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11712">
-              <caret line="488" column="5" selection-start-line="488" selection-start-column="5" selection-end-line="488" selection-end-column="5" />
+            <state relative-caret-position="1555">
+              <caret line="488" column="26" selection-start-line="488" selection-start-column="26" selection-end-line="488" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -64,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
+            <state relative-caret-position="1656">
               <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
             </state>
           </provider>
@@ -74,10 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>-&gt;insert</find>
-      <find>jalali</find>
-      <find>jDate</find>
-      <find>$wpdb-&gt;get_results</find>
       <find>WHERE</find>
       <find>add_role</find>
       <find>role</find>
@@ -104,6 +124,10 @@
       <find>768</find>
       <find>tablenav</find>
       <find>حمایت</find>
+      <find>is_admin</find>
+      <find>define</find>
+      <find>include</find>
+      <find>product_type</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
@@ -125,18 +149,20 @@
         <option value="$PROJECT_DIR$/views/Add_planet.php" />
         <option value="$PROJECT_DIR$/views/admin/admin_process.php" />
         <option value="$PROJECT_DIR$/views/Show_planets.php" />
-        <option value="$PROJECT_DIR$/ztools.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/env.php" />
         <option value="$PROJECT_DIR$/env.example.php" />
-        <option value="$PROJECT_DIR$/css/ztools-styles.css" />
-        <option value="$PROJECT_DIR$/planet.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/views/author_posts.php" />
+        <option value="$PROJECT_DIR$/css/ztools-styles.css" />
+        <option value="$PROJECT_DIR$/ztools.php" />
+        <option value="$PROJECT_DIR$/views/admin/metabox_echo.php" />
+        <option value="$PROJECT_DIR$/planet.php" />
+        <option value="$PROJECT_DIR$/views/admin/metabox.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -159,6 +185,12 @@
               <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
               <item name="ztools" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ztools" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,7 +262,9 @@
       <workItem from="1626667423126" duration="19997000" />
       <workItem from="1626753854234" duration="10112000" />
       <workItem from="1627123453862" duration="433000" />
-      <workItem from="1627124902007" duration="520000" />
+      <workItem from="1627124902007" duration="735000" />
+      <workItem from="1627361578863" duration="209000" />
+      <workItem from="1627964709128" duration="8267000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -257,18 +291,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88258000" />
+    <option name="totallyTimeSpent" value="96949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16577825" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15778251" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" visible="true" weight="0.2751896" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.2751896" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
@@ -380,16 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ztools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#6#290#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zaparat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -406,6 +431,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1555">
+          <caret line="488" column="26" selection-start-line="488" selection-start-column="26" selection-end-line="488" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/env.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -413,24 +452,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
+    <entry file="file://$PROJECT_DIR$/ztools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11712">
-          <caret line="488" column="5" selection-start-line="488" selection-start-column="5" selection-end-line="488" selection-end-column="5" />
+        <state relative-caret-position="336">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#6#290#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/views/author_posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+        <state relative-caret-position="192">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/planet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="649" column="43" selection-start-line="649" selection-start-column="43" selection-end-line="649" selection-end-column="43" />
+        <state relative-caret-position="286">
+          <caret line="665" column="1" lean-forward="true" selection-start-line="665" selection-start-column="1" selection-end-line="665" selection-end-column="1" />
           <folding>
             <element signature="n#ZtoolsRegisterHotLinkMetaBox#0;n#!!top" />
             <element signature="n#ZtoolsPlanetUrlMetabox#0;n#!!top" />
@@ -442,13 +487,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/author_posts.php">
+    <entry file="file://$PROJECT_DIR$/views/admin/metabox_echo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/metabox.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
