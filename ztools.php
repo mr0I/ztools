@@ -49,3 +49,18 @@ define('PLANET_CSS', plugin_dir_url(__FILE__) . 'css/');
  	wp_enqueue_style( 'styles', PLANET_CSS . 'ztools-styles.css');
  });
 
+
+ add_action( 'admin_enqueue_scripts', function(){
+	 // scripts
+	 wp_enqueue_script('adminScript', PLANET_JS.'admin/adminScripts.js', array('jquery', 'media-upload'));
+	 wp_localize_script( 'adminScript', 'PlanetAdminAjax', array(
+		 'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		 'security' => wp_create_nonce( 'ZIabP5Vi&oU$a^' ),
+		 'REQUEST_TIMEOUT' => 10000,
+	 ));
+ 	// styles
+ 	wp_enqueue_style( 'adminStyles', PLANET_CSS . 'admin/adminStyles.css');
+ });
+
+
+

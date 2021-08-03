@@ -1,0 +1,124 @@
+/* Dashboard Menu Wrapper */
+.dash_menu_warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dash_menu_warpper .tabs{
+    text-align: right;
+    width: 94%;
+}
+.dash_menu_warpper .tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0 2px;
+    background:orangered;
+    display:inline-block;
+    color:#fff;
+    border-radius:3px 3px 0 0;
+}
+.dash_menu_warpper .panels{
+    background:#fffffff6;
+    box-shadow: 0 2rem 2rem #bdbdbd;
+    min-height:500px;
+    width:94%;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;
+    position: relative;
+}
+.dash_menu_warpper .panels .tablenav{
+    float: right;
+}
+.dash_menu_warpper .panels table td,.dash_menu_warpper .panels table th{
+    vertical-align: middle;
+}
+.dash_menu_warpper .panels #panelCover{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+}
+.dash_menu_warpper .panels #panelCover>p{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3em;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #eee;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.dash_menu_warpper .panel{
+    display:none;
+    animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.dash_menu_warpper .panel-title{
+    font-size:1.5em;
+    font-weight:bold
+}
+.dash_menu_warpper .radio{
+    display:none ;
+}
+.dash_menu_warpper .button-primary{
+    background: orangered;
+    border-color: orangered;
+    padding: 5px 50px;
+    font-weight: bold;
+}
+.dash_menu_warpper .button-primary:hover{
+    background: orange;
+    border-color: orange;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+    display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+    background:#fffffff6;
+    color: #424242;
+    border-top: 3px solid orangered;
+}
+
+/* Dashboard Menu Wrapper */
+
+.editRow{
+    background-color: #FFFFFF;
+    padding: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+.editRow form{
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+

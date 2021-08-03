@@ -180,7 +180,7 @@ function Ztools_setup_menu()
 	add_submenu_page(
 		__FILE__,          // top level menu page
 		'Ztools About',   // title of the settings page
-		'About',          // title of the submenu
+		__('About' , 'ztools'),          // title of the submenu
 		'manage_options',  // capability of the user to see this page
 		__FILE__.'/About',// slug of the settings page
 		'Ztools_About'    // callback function when rendering the page
@@ -188,13 +188,11 @@ function Ztools_setup_menu()
 	add_submenu_page(
 		__FILE__,          // top level menu page
 		'Ztools Settings',   // title of the settings page
-		'Settings',          // title of the submenu
+		__('Settings' , 'ztools'),  // title of the submenu
 		'manage_options',  // capability of the user to see this page
 		__FILE__.'/ztools_settings',// slug of the settings page
 		'Ztools_Settings'    // callback function when rendering the page
 	);
-
-
 }
 
 function Ztools_Dashboard()
@@ -221,6 +219,7 @@ function Ztools_Settings()
     </div>
 	<?php
 }
+
 
 
 add_action('init', 'ZtoolsRegisterHotLinkPostType');
