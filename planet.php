@@ -208,7 +208,7 @@ function Ztools_Settings()
 {
 	?>
     <div class="wrap">
-	    <?php settings_errors();?>
+		<?php settings_errors();?>
         <form method="post" action="options.php">
 			<?php
 			settings_fields("Ztools_settings_options");
@@ -497,7 +497,7 @@ class Ztools_last_planets extends WP_Widget{
 				'orderby'   => 'meta_value', //or 'meta_value_num'
 				'posts_per_page' => $count
 			);
-        }else{
+		}else{
 			$args = array(
 				'post_type' => 'zplanet' ,
 				'orderby' =>  $order_by,
@@ -505,7 +505,7 @@ class Ztools_last_planets extends WP_Widget{
 				'posts_per_page' => $count
 				//			'fields'       => array('display_name', 'user_email', 'ID'),
 			);
-        }
+		}
 
 		$planets = new WP_Query($args);
 		?>
@@ -541,10 +541,10 @@ class Ztools_last_planets extends WP_Widget{
                         </h5>
                         <time class="recent-posts-time" datetime=""><?php echo get_the_date( '' ); ?></time>
                         <a class="recent-posts-comment" href="<?php esc_url(the_permalink()); ?>#comments">
-                            <?php echo get_comments_number(); ?> <?php echo __('Comments', 'ztools'); ?></a>
-                        <?php
-                        $likes = get_post_meta( $post->ID, 'likes_count', false );
-                        ?>
+							<?php echo get_comments_number(); ?> <?php echo __('Comments', 'ztools'); ?></a>
+						<?php
+						$likes = get_post_meta( $post->ID, 'likes_count', false );
+						?>
                         <a class="recent-posts-comment" ><?php echo $likes[0]; ?> <?php echo __('Likes', 'ztools'); ?></a>
                     </div>
                 </li>
@@ -615,16 +615,16 @@ class Ztools_planets_Categories extends WP_Widget{
 		$cats = get_categories($args);
 		?>
         <ul>
-            <?php
-            foreach($cats as $cat){
-                ?>
+			<?php
+			foreach($cats as $cat){
+				?>
                 <li class="cat-item cat-item-8337">
                     <a href="<?php echo 'https://sisoog.com/planet-category/'.$cat->slug; ?>"><?php echo $cat->name; ?></a>
-<!--                    <a href="--><?php //echo 'http://192.168.30.99/wordpress/planet-category/'.$cat->slug; ?><!--">--><?php //echo $cat->name; ?><!--</a>-->
+                    <!--                    <a href="--><?php //echo 'http://192.168.30.99/wordpress/planet-category/'.$cat->slug; ?><!--">--><?php //echo $cat->name; ?><!--</a>-->
                 </li>
-            <?php
-            }
-         ?>
+				<?php
+			}
+			?>
         </ul>
 		<?php
 
@@ -658,11 +658,17 @@ add_action('template_redirect', function(){
 /* Add Rewrite rules */
 
 
-/* Add Metabox */
+/* Add Exchange Rate to woocommerce forms */
 define('ZTOOLS_ADMIN_DIR', plugin_dir_path(__FILE__) . 'views/admin/');
-if (is_admin()){
-	require_once ZTOOLS_ADMIN_DIR .'metabox.php';
+add_action('init','your_function');
+function your_function(){
+	$current_user = wp_get_current_user();
+	if (in_array('administrator' , $current_user->roles) || in_array('editor' , $current_user->roles)){
+			require_once ZTOOLS_ADMIN_DIR .'exchange_rate.php';
+	}
 }
-/* Add Metabox */
+/* Add Exchange Rate to woocommerce forms */
+
+
 
 
