@@ -37,8 +37,6 @@ function ztools_currency_rate_save( $post_id ){
 	$dollarValue = get_option('Ztools_exrate_dollar', '');
 	$yuanValue = get_option('Ztools_exrate_yuan', '');
 
-
-
 	$product = wc_get_product( $post_id );
 	switch ($currency_type){
 		case 'tomaan':
@@ -58,14 +56,13 @@ function ztools_currency_rate_save( $post_id ){
 			$sale_price = ($currency_special_rate !== '')?  $currency_special_rate * ($tomaanValue/$tomaanValue) : null;
 	}
 
-	$product->set_regular_price( round($regular_price) );
+	$product->set_regular_price( round($regular_price ) );
 	if ($sale_price == '' || $sale_price == '0' || $sale_price == null) {
 		$product->set_sale_price('');
 	} else {
 		$product->set_sale_price( round($sale_price) );
 	}
 	$product->save();
-
 }
 
 

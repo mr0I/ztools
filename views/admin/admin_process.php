@@ -37,7 +37,6 @@ add_action("admin_init", function(){
 
 
 
-
 	register_setting('Ztools_settings_options', 'ztools_add_planet_url', 'sanitize_text_field');
 	register_setting('Ztools_settings_options', 'ztools_edit_planet_url', 'sanitize_text_field');
 	register_setting('Ztools_settings_options', 'ztools_show_planets_url', 'sanitize_text_field');
@@ -118,7 +117,7 @@ function Ztools_exrate_dollar_callback(){
 }
 function Ztools_exrate_yuan_callback(){
 	echo '<input class="ltr left-align" type="text" name="Ztools_exrate_yuan" id="Ztools_exrate_yuan" 
-	value="' . get_option('Ztools_exrate_yuan', 4000) . '" 
+	value="' . get_option('Ztools_exrate_yuan', 6.45) . '" 
 	  style="max-width: 100%;min-width: 400px" required/>';
 }
 
