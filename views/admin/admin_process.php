@@ -2,6 +2,7 @@
 
 
 add_action("admin_init", function(){
+
 	add_settings_section('Ztools_settings_options', __('Ztools Settings', 'ztools'), null, 'Ztools_setting');
 
 	add_settings_field('Ztools_setting_header1', __('User Panel Settings', 'ztools'), 'Ztools_setting_header1_callback'
@@ -25,15 +26,15 @@ add_action("admin_init", function(){
 		, 'Ztools_setting', 'Ztools_settings_options');
 	add_settings_field('Ztools_planet_login_url', __('Login Url', 'ztools'), 'Ztools_planet_login_url_callback'
 		, 'Ztools_setting', 'Ztools_settings_options');
+
 /////////////////////////////////
-	add_settings_field('Ztools_setting_header3', __('Exchange Rate Settings', 'ztools'), 'Ztools_setting_header3_callback'
-		, 'Ztools_setting', 'Ztools_settings_options');
-	add_settings_field('Ztools_exrate_tomaan', __('Tomaan Value', 'ztools'), 'Ztools_exrate_tomaan_callback'
-		, 'Ztools_setting', 'Ztools_settings_options');
+/////////////////////////////////
+
+	add_settings_section('exchange_rate_settings_options', __('Exchange Rate Settings', 'ztools'), null, 'exchange_rate_settings');
 	add_settings_field('Ztools_exrate_dollar', __('Dollar Value', 'ztools'), 'Ztools_exrate_dollar_callback'
-		, 'Ztools_setting', 'Ztools_settings_options');
+		, 'exchange_rate_settings', 'exchange_rate_settings_options');
 	add_settings_field('Ztools_exrate_yuan', __('Yuan Value', 'ztools'), 'Ztools_exrate_yuan_callback'
-		, 'Ztools_setting', 'Ztools_settings_options');
+		, 'exchange_rate_settings', 'exchange_rate_settings_options');
 
 
 
@@ -47,9 +48,8 @@ add_action("admin_init", function(){
 	register_setting('Ztools_settings_options', 'ztools_planet_cat_postPP', 'sanitize_text_field');
 	register_setting('Ztools_settings_options', 'ztools_planet_loginUrl', 'sanitize_text_field');
 	/////////////////////////////////
-	register_setting('Ztools_settings_options', 'Ztools_exrate_tomaan', 'sanitize_text_field');
-	register_setting('Ztools_settings_options', 'Ztools_exrate_dollar', 'sanitize_text_field');
-	register_setting('Ztools_settings_options', 'Ztools_exrate_yuan', 'sanitize_text_field');
+	register_setting('exchange_rate_settings_options', 'Ztools_exrate_dollar', 'sanitize_text_field');
+	register_setting('exchange_rate_settings_options', 'Ztools_exrate_yuan', 'sanitize_text_field');
 
 });
 
@@ -102,22 +102,14 @@ function Ztools_planet_login_url_callback(){
 	 style="max-width: 100%;min-width: 400px" required/>';
 }
 /////////////////////////////////
-function Ztools_setting_header3_callback() {
-	echo '</br><hr>';
-}
-function Ztools_exrate_tomaan_callback(){
-	echo '<input class="ltr left-align" type="text" name="Ztools_exrate_tomaan" id="Ztools_exrate_tomaan" 
-	value="' . get_option('Ztools_exrate_tomaan', 25000) . '" 
-	  style="max-width: 100%;min-width: 400px" required/>';
-}
 function Ztools_exrate_dollar_callback(){
 	echo '<input class="ltr left-align" type="text" name="Ztools_exrate_dollar" id="Ztools_exrate_dollar" 
-	value="' . get_option('Ztools_exrate_dollar', 1) . '" 
+	value="' . get_option('Ztools_exrate_dollar', 25000) . '" 
 	  style="max-width: 100%;min-width: 400px" required/>';
 }
 function Ztools_exrate_yuan_callback(){
 	echo '<input class="ltr left-align" type="text" name="Ztools_exrate_yuan" id="Ztools_exrate_yuan" 
-	value="' . get_option('Ztools_exrate_yuan', 6.45) . '" 
+	value="' . get_option('Ztools_exrate_yuan', 3900) . '" 
 	  style="max-width: 100%;min-width: 400px" required/>';
 }
 

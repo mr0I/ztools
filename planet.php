@@ -190,7 +190,7 @@ function Ztools_setup_menu()
 		'Ztools Settings',   // title of the settings page
 		__('Settings' , 'ztools'),  // title of the submenu
 		'manage_options',  // capability of the user to see this page
-		__FILE__.'/ztools_settings',// slug of the settings page
+		'ztools',// slug of the settings page
 		'Ztools_Settings'    // callback function when rendering the page
 	);
 }
@@ -208,11 +208,22 @@ function Ztools_Settings()
 {
 	?>
     <div class="wrap">
-		<?php settings_errors();?>
+	    <?php if( !isset($_GET['tab']) ) $_GET['tab'] = 'main_page';?>
+        <h2 class="nav-tab-wrapper">
+            <a href="?page=ztools&tab=main_page" class="nav-tab<?php if( $_GET['tab'] == 'main_page'){echo ' nav-tab-active';};?>"><?php echo __('Main Page Settings', 'ztools'); ?></a>
+            <a href="?page=ztools&tab=exchange_rate_page" class="nav-tab<?php if( $_GET['tab'] == 'exchange_rate_page'){echo ' nav-tab-active';};?>"><?php echo __('Exchange Rate Settings', 'ztools'); ?></a>
+        </h2>
+
+        <?php settings_errors();?>
         <form method="post" action="options.php">
 			<?php
-			settings_fields("Ztools_settings_options");
-			do_settings_sections("Ztools_setting");
+			if ( $_GET['tab'] == 'main_page' ){
+				settings_fields("Ztools_settings_options");
+				do_settings_sections("Ztools_setting");
+			} else if ( $_GET['tab'] == 'exchange_rate_page' ) {
+				settings_fields('exchange_rate_settings_options');
+				do_settings_sections('exchange_rate_settings');
+			}
 			submit_button();
 			?>
         </form>

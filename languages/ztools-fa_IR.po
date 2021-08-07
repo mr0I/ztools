@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zeus Tools\n"
-"POT-Creation-Date: 2021-08-04 08:43+0430\n"
-"PO-Revision-Date: 2021-08-04 08:48+0430\n"
+"POT-Creation-Date: 2021-08-07 12:10+0430\n"
+"PO-Revision-Date: 2021-08-07 12:10+0430\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -179,59 +179,68 @@ msgstr ""
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: planet.php:426 planet.php:437 planet.php:485 planet.php:605
+#: planet.php:213
+msgid "Main Page Settings"
+msgstr "تنظیمات اصلی"
+
+#: planet.php:214 views/admin/admin_process.php:33
+#: views/admin/admin_process.php:34
+msgid "Exchange Rate Settings"
+msgstr "تنظیمات نرخ تبدیل"
+
+#: planet.php:437 planet.php:448 planet.php:496 planet.php:616
 msgid "Last Planets"
 msgstr "آخرین مطالب سیاره"
 
-#: planet.php:428
+#: planet.php:439
 msgid "Show last planet posts by ..."
 msgstr "نمایش آخرین مطالب سیاره بر اساس تاریخ، تعداد کامنت و ..."
 
-#: planet.php:443 planet.php:586
+#: planet.php:454 planet.php:597
 msgid "title"
 msgstr "عنوان"
 
-#: planet.php:448
+#: planet.php:459
 msgid "Sorting By"
 msgstr "مرتب سازی بر اساس"
 
-#: planet.php:451
+#: planet.php:462
 msgid "Date"
 msgstr "تاریخ"
 
-#: planet.php:452
+#: planet.php:463
 msgid "Likes Count"
 msgstr "تعداد لایک"
 
-#: planet.php:453
+#: planet.php:464
 msgid "Comments Count"
 msgstr "تعداد کامنت"
 
-#: planet.php:457
+#: planet.php:468
 msgid "Ascending"
 msgstr "صعودی"
 
-#: planet.php:459
+#: planet.php:470
 msgid "Descending"
 msgstr "نزولی"
 
-#: planet.php:463
+#: planet.php:474
 msgid "Count"
 msgstr "تعداد"
 
-#: planet.php:544
+#: planet.php:555
 msgid "Comments"
 msgstr "دیدگاه"
 
-#: planet.php:548
+#: planet.php:559
 msgid "Likes"
 msgstr "لایک"
 
-#: planet.php:573 planet.php:583
+#: planet.php:584 planet.php:594
 msgid "Planets Categories"
 msgstr "دسته بندی سیاره"
 
-#: planet.php:575
+#: planet.php:586
 msgid "Show Planet Categories."
 msgstr "نمایش دسته بندی سیاره"
 
@@ -448,73 +457,53 @@ msgstr "خطا در پاک کردن آیتم!"
 msgid "No Post Exists"
 msgstr "تاکنون هیچ مطلبی ارسال نکرده اید"
 
-#: views/admin/admin_process.php:5
+#: views/admin/admin_process.php:6
 msgid "Ztools Settings"
 msgstr "تنظیمات"
 
-#: views/admin/admin_process.php:7
+#: views/admin/admin_process.php:8
 msgid "User Panel Settings"
 msgstr "تنظیمات بخش کاربری"
 
-#: views/admin/admin_process.php:9
+#: views/admin/admin_process.php:10
 msgid "Add Planet Url"
 msgstr "آدرس برگه افزودن پلنت"
 
-#: views/admin/admin_process.php:11
+#: views/admin/admin_process.php:12
 msgid "Edit Planet Url"
 msgstr "آدرس برگه ویرایش پلنت"
 
-#: views/admin/admin_process.php:13
+#: views/admin/admin_process.php:14
 msgid "Show Planets Url"
 msgstr "آدرس برگه نمایش پلنت های کاربر"
 
-#: views/admin/admin_process.php:15 views/admin/admin_process.php:22
+#: views/admin/admin_process.php:16 views/admin/admin_process.php:23
 msgid "Posts Per Page"
 msgstr "تعداد پست ها در هر صفحه"
 
-#: views/admin/admin_process.php:18
+#: views/admin/admin_process.php:19
 msgid "Planet Settings"
 msgstr "تنظیمات بخش پلنت"
 
-#: views/admin/admin_process.php:20
+#: views/admin/admin_process.php:21
 msgid "excerpt Length"
 msgstr "طول خلاصه متن (کلمه)"
 
-#: views/admin/admin_process.php:24
+#: views/admin/admin_process.php:25
 msgid "Posts Per Page (for category)"
 msgstr "تعداد پست ها در هر صفحه (برای دسته بندی)"
 
-#: views/admin/admin_process.php:26
+#: views/admin/admin_process.php:27
 msgid "Login Url"
 msgstr "لینک ورود به سایت"
 
-#: views/admin/admin_process.php:29
-msgid "Exchange Rate Settings"
-msgstr "تنظیمات نرخ تبدیل"
-
-#: views/admin/admin_process.php:31
-msgid "Tomaan Value"
-msgstr "ارزش تومان"
-
-#: views/admin/admin_process.php:33
+#: views/admin/admin_process.php:36
 msgid "Dollar Value"
-msgstr "ارزش دلار"
+msgstr "قیمت دلار (به تومان)"
 
-#: views/admin/admin_process.php:35
+#: views/admin/admin_process.php:38
 msgid "Yuan Value"
-msgstr "ارزش یوان"
-
-#: views/admin/metabox_echo.php:11
-msgid "Currency Type"
-msgstr "نوع ارز"
-
-#: views/admin/metabox_echo.php:20
-msgid "Currency Price"
-msgstr "قیمت ارزی"
-
-#: views/admin/metabox_echo.php:25
-msgid "Currency Special Price"
-msgstr "قیمت فروش ویژه ارزی"
+msgstr "قیمت یوان (به تومان)"
 
 #. Plugin Name of the plugin/theme
 msgid "Zeus Tools"
@@ -535,6 +524,18 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://www.sisoog.com"
 msgstr ""
+
+#~ msgid "Tomaan Value"
+#~ msgstr "ارزش تومان"
+
+#~ msgid "Currency Type"
+#~ msgstr "نوع ارز"
+
+#~ msgid "Currency Price"
+#~ msgstr "قیمت ارزی"
+
+#~ msgid "Currency Special Price"
+#~ msgstr "قیمت فروش ویژه ارزی"
 
 #, fuzzy
 #~| msgid "Max length equals 500"

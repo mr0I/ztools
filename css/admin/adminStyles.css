@@ -98,7 +98,9 @@
     color: #424242;
     border-top: 3px solid orangered;
 }
-
+.option_group_fields{
+    display: none;
+}
 /* Dashboard Menu Wrapper */
 
 .editRow{

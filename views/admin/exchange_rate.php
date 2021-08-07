@@ -13,6 +13,8 @@ function ztools_product_options(){
 		'desc_tip' => true,
 		'description' => 'آیا قیمت بر اساس نرخ ارز محاسبه شود',
 	));
+
+	echo '<div class="option_group_fields">';
 	woocommerce_wp_select(array(
 		'id' => 'ztools_currency_type',
 		'label' => 'نوع ارز',
@@ -20,7 +22,6 @@ function ztools_product_options(){
 		'description' => '',
 		'options' => array(
 			'---' => '---',
-			'tomaan' => 'تومان',
 			'dollar' => 'دلار',
 			'yuan' => 'یوان'
 		)
@@ -38,7 +39,7 @@ function ztools_product_options(){
 		'description'       => ''
 	));
 
-	echo '</div>';
+	echo '</div></div>';
 }
 
 add_action( 'woocommerce_process_product_meta', 'ztools_save_fields', 10, 2 );
@@ -69,34 +70,29 @@ function ztools_currency_rate_save( $post_id ){
 
 	if ( $currency_type === '0' ) return;
 	// Calculate Currency Rate
-	$tomaanValue = get_option('Ztools_exrate_tomaan', '');
 	$dollarValue = get_option('Ztools_exrate_dollar', '');
 	$yuanValue = get_option('Ztools_exrate_yuan', '');
 
 	$product = wc_get_product( $post_id );
 	switch ($currency_type){
-		case 'tomaan':
-			$regular_price = $currency_rate * ($tomaanValue/$tomaanValue);
-			$sale_price = ($currency_special_rate !== '')?  $currency_special_rate * ($tomaanValue/$tomaanValue) : null;
-			break;
 		case 'dollar':
-			$regular_price = $currency_rate * ($tomaanValue/$dollarValue);
-			$sale_price = ($currency_special_rate !== '')?  $currency_special_rate * ($tomaanValue/$dollarValue) : null;
+			$regular_price = $currency_rate * $dollarValue;
+			$sale_price = ($currency_special_rate !== '')?  $currency_special_rate * $dollarValue : null;
 			break;
 		case 'yuan':
-			$regular_price = $currency_rate * ($tomaanValue/$yuanValue);
-			$sale_price = ($currency_special_rate !== '')?  $currency_special_rate * ($tomaanValue/$yuanValue) : null;
+			$regular_price = $currency_rate * $yuanValue;
+			$sale_price = ($currency_special_rate !== '')?  $currency_special_rate * $yuanValue : null;
 			break;
 		default:
-			$regular_price = $currency_rate * ($tomaanValue/$tomaanValue);
-			$sale_price = ($currency_special_rate !== '')?  $currency_special_rate * ($tomaanValue/$tomaanValue) : null;
+			$regular_price = $currency_rate * $dollarValue;
+			$sale_price = ($currency_special_rate !== '')?  $currency_special_rate * $dollarValue : null;
 	}
 
-	$product->set_regular_price( round($regular_price ) );
+	$product->set_regular_price( round($regular_price , -3 ) );
 	if ($sale_price == '' || $sale_price == '0' || $sale_price == null) {
 		$product->set_sale_price('');
 	} else {
-		$product->set_sale_price( round($sale_price) );
+		$product->set_sale_price( round($sale_price , -3) );
 	}
 
 	$product->save();
