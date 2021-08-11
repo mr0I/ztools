@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/inc/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/ajax_requests.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/admin/adminStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/admin/adminStyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/admin/adminScripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin/adminScripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ztools-fa_IR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ztools-fa_IR.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ztools-fa_IR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ztools-fa_IR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/ajax_requests.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/planet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/admin_process.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/admin_process.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/admin/exchange_rate.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/exchange_rate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ztools.php" beforeDir="false" afterPath="$PROJECT_DIR$/ztools.php" afterDir="false" />
     </list>
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ztools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="24">
+              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
               <folding>
                 <element signature="e#6#290#0#PHP" expanded="true" />
               </folding>
@@ -32,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/planet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="224" column="60" selection-start-line="224" selection-start-column="38" selection-end-line="224" selection-end-column="60" />
+            <state relative-caret-position="244">
+              <caret line="237" column="28" lean-forward="true" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -44,26 +43,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin/exchange_rate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1128">
-              <caret line="56" column="16" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            <state relative-caret-position="288">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="n#ztools_save_fields#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/admin_process.php">
+        <entry file="file://$PROJECT_DIR$/inc/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1214">
-              <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
+            <state relative-caret-position="326">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/admin/adminStyles.css">
+        <entry file="file://$PROJECT_DIR$/views/admin/ajax_requests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+            <state relative-caret-position="384">
+              <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+              <folding>
+                <element signature="n#getCurrencyRate_callback#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/admin/adminScripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="288">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -89,36 +94,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ora</find>
-      <find>ex_rate</find>
-      <find>_ztools_currency_input</find>
-      <find>اطلاعات</find>
-      <find>ztools_excerptLen</find>
-      <find>_ztools_currency_type</find>
-      <find>تنظیمات نرخ تبدیل</find>
-      <find>Exchange Rate Settings</find>
-      <find>Ztools_setting_header3_callback</find>
-      <find>_book_format</find>
-      <find>super_product</find>
-      <find>ztools_special_currency_input</find>
-      <find>ztools_currency_rate_save</find>
-      <find>save_post</find>
-      <find>$ztools_currency_type</find>
-      <find>current_user_can</find>
-      <find>add_action('init'</find>
-      <find>woocommerce</find>
-      <find>ارزش دلار</find>
-      <find>Dollar Value</find>
-      <find>Ztools_exrate_tomaan</find>
       <find>home_page</find>
-      <find>Ztools_settings_options</find>
       <find>Ztools_exrate_dollar</find>
       <find>Ztools_exrate_yuan_callback</find>
       <find>add_settings_section</find>
       <find>Ztools_setting</find>
-      <find>ztools_is_rate_dependent</find>
       <find>header3</find>
       <find>do_settings_sections</find>
+      <find>submit_planet_frm</find>
+      <find>update_option</find>
+      <find>Ztools_settings_options</find>
+      <find>global $wpdb</find>
+      <find>set_regular_price</find>
+      <find>define(</find>
+      <find>define</find>
+      <find>$post_id</find>
+      <find>ZEUS_INC</find>
+      <find>PlanetAdminAjax</find>
+      <find>dynamic_currency_rate</find>
+      <find>console.log</find>
+      <find>admin_process</find>
+      <find>calc_currency_rate</find>
+      <find>get_the_ID</find>
+      <find>is_admin</find>
+      <find>Ztools_Settings</find>
+      <find>$('.option_group')</find>
+      <find>ztools_is_rate_dependent</find>
+      <find>ajax</find>
+      <find>do_settings</find>
+      <find>functions.php</find>
+      <find>update_all_woo_prices</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
@@ -146,16 +151,18 @@
         <option value="$PROJECT_DIR$/views/author_posts.php" />
         <option value="$PROJECT_DIR$/css/ztools-styles.css" />
         <option value="$PROJECT_DIR$/css/admin/admin-styles.css" />
-        <option value="$PROJECT_DIR$/js/ajax_requests.php" />
         <option value="$PROJECT_DIR$/views/admin/metabox_echo.php" />
         <option value="$PROJECT_DIR$/views/admin/metabox.php" />
         <option value="$PROJECT_DIR$/views/admin/ex_rate.php" />
-        <option value="$PROJECT_DIR$/planet.php" />
-        <option value="$PROJECT_DIR$/views/admin/exchange_rate.php" />
         <option value="$PROJECT_DIR$/css/admin/adminStyles.css" />
-        <option value="$PROJECT_DIR$/js/admin/adminScripts.js" />
         <option value="$PROJECT_DIR$/views/admin/admin_process.php" />
+        <option value="$PROJECT_DIR$/js/ajax_requests.php" />
+        <option value="$PROJECT_DIR$/views/admin/ajax_requests.php" />
+        <option value="$PROJECT_DIR$/views/admin/exchange_rate.php" />
+        <option value="$PROJECT_DIR$/js/admin/adminScripts.js" />
         <option value="$PROJECT_DIR$/ztools.php" />
+        <option value="$PROJECT_DIR$/inc/functions.php" />
+        <option value="$PROJECT_DIR$/planet.php" />
       </list>
     </option>
   </component>
@@ -182,28 +189,6 @@
             <path>
               <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
               <item name="ztools" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ztools" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ztools" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ztools" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ztools" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -220,19 +205,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../wordpress/wp-content/plugins/spa-radshid" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools\inc" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools" />
       <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools\inc\libs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools\views\admin" />
+      <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools\inc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -288,7 +274,11 @@
       <workItem from="1627982387080" duration="11074000" />
       <workItem from="1628049818121" duration="2859000" />
       <workItem from="1628053309217" duration="14774000" />
-      <workItem from="1628317938177" duration="4908000" />
+      <workItem from="1628317938177" duration="5557000" />
+      <workItem from="1628500386591" duration="810000" />
+      <workItem from="1628511375634" duration="448000" />
+      <workItem from="1628568361499" duration="20583000" />
+      <workItem from="1628654144620" duration="4151000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -315,18 +305,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131634000" />
+    <option name="totallyTimeSpent" value="158275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14658849" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.2751896" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" visible="true" weight="0.2751896" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
@@ -444,30 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/author_posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ajax_requests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/Show_planets.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="933">
@@ -494,48 +461,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/author_posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/admin/adminStyles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="827">
           <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/adminScripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="224" column="60" selection-start-line="224" selection-start-column="38" selection-end-line="224" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/exchange_rate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="56" column="16" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/admin_process.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1214">
-          <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
+        <state relative-caret-position="48">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#3791#5588#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ztools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="24">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding>
             <element signature="e#6#290#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/ajax_requests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <folding>
+            <element signature="n#getCurrencyRate_callback#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin/adminScripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/exchange_rate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="n#ztools_save_fields#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="237" column="28" lean-forward="true" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="28" />
         </state>
       </provider>
     </entry>

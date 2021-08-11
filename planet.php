@@ -4,6 +4,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Invalid request.' );
 }
 
+define('ZEUS_INC', plugin_dir_path(__FILE__) . 'inc/');
+
+if(is_admin()){
+	include(plugin_dir_path( __FILE__ ).'views/admin/admin_process.php');
+	include(plugin_dir_path( __FILE__ ).'views/admin/ajax_requests.php');
+}
+
+require_once ZEUS_INC . 'functions.php';
+
+
 
 function ZtoolsRegisterHotLinkPostType()
 {
@@ -173,7 +183,6 @@ function  Ztools_Deactivation()
 	flush_rewrite_rules();
 }
 
-
 function Ztools_setup_menu()
 {
 	add_menu_page('Zeus Tools', 'Zeus Tools', 'manage_options', __FILE__, 'Ztools_Dashboard' ,'dashicons-smiley'/*plugins_url('/img/icon.svg',__FILE__)*/);
@@ -203,18 +212,17 @@ function Ztools_About()
 {
 	echo "<h1><center>My Name Is Zeus</center></h1>";
 }
-require(plugin_dir_path( __FILE__ ).'views/admin/admin_process.php');
 function Ztools_Settings()
 {
 	?>
     <div class="wrap">
-	    <?php if( !isset($_GET['tab']) ) $_GET['tab'] = 'main_page';?>
+		<?php if( !isset($_GET['tab']) ) $_GET['tab'] = 'main_page';?>
         <h2 class="nav-tab-wrapper">
             <a href="?page=ztools&tab=main_page" class="nav-tab<?php if( $_GET['tab'] == 'main_page'){echo ' nav-tab-active';};?>"><?php echo __('Main Page Settings', 'ztools'); ?></a>
             <a href="?page=ztools&tab=exchange_rate_page" class="nav-tab<?php if( $_GET['tab'] == 'exchange_rate_page'){echo ' nav-tab-active';};?>"><?php echo __('Exchange Rate Settings', 'ztools'); ?></a>
         </h2>
 
-        <?php settings_errors();?>
+		<?php settings_errors();?>
         <form method="post" action="options.php">
 			<?php
 			if ( $_GET['tab'] == 'main_page' ){
@@ -223,6 +231,9 @@ function Ztools_Settings()
 			} else if ( $_GET['tab'] == 'exchange_rate_page' ) {
 				settings_fields('exchange_rate_settings_options');
 				do_settings_sections('exchange_rate_settings');
+
+				// Update All Products Prices
+				update_all_woo_prices();
 			}
 			submit_button();
 			?>
@@ -232,7 +243,6 @@ function Ztools_Settings()
 }
 
 
-
 add_action('init', 'ZtoolsRegisterHotLinkPostType');
 add_action('init', 'Ztools_register_taxonomies', 0 );
 add_action('admin_menu', 'Ztools_setup_menu');
@@ -240,8 +250,6 @@ add_action('add_meta_boxes','ZtoolsRegisterHotLinkMetaBox');
 add_action("save_post", "ZtoolsSavePostMeta",10,3);
 register_activation_hook(__FILE__, 'Ztools_Activation');
 register_deactivation_hook(__FILE__, 'Ztools_Deactivation');
-
-
 
 
 // Add Post from frontend //
@@ -263,8 +271,6 @@ function planet_posts($attr , $content = null){
 }
 
 
-
-
 add_filter( 'wp_dropdown_cats', 'dropdown_filter', 10, 2);
 function dropdown_filter( $output, $r ) {
 	//$output = preg_replace( '/<select (.*?) >/', '<select $1 size="3" multiple >', $output);
@@ -273,6 +279,7 @@ function dropdown_filter( $output, $r ) {
 }
 
 
+// Ajax Requests
 function submit_planet_frm_callback(){
 	check_ajax_referer( '(H+MbPeShVmYq3t6', 'security' );
 
@@ -675,7 +682,7 @@ add_action('init','your_function');
 function your_function(){
 	$current_user = wp_get_current_user();
 	if (in_array('administrator' , $current_user->roles) || in_array('editor' , $current_user->roles)){
-			require_once ZTOOLS_ADMIN_DIR .'exchange_rate.php';
+		require_once ZTOOLS_ADMIN_DIR .'exchange_rate.php';
 	}
 }
 /* Add Exchange Rate to woocommerce forms */
