@@ -3,7 +3,7 @@
  * Plugin Name: Zeus Tools
  * Plugin URI: https://sisoog.com/
  * Description: Zeus Light Tools For Sisoog WebSite.
- * Version: 1.5
+ * Version: 1.6
  * Author: <a href="http://sisoog.com/user/zeus">Zeus</a>
  * Author URI: https://www.sisoog.com
  * Text Domain: ztools

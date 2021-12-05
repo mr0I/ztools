@@ -252,14 +252,18 @@ register_activation_hook(__FILE__, 'Ztools_Activation');
 register_deactivation_hook(__FILE__, 'Ztools_Deactivation');
 
 
-// Add Post from frontend //
+// Add Post from frontend
 add_action('init', function(){
+	add_shortcode('show_planets', 'show_planets');
 	add_shortcode('show_planet_form', 'planet_form');
 	add_shortcode('edit_planet_form', 'planet_edit_form');
 	add_shortcode('show_planet_posts', 'planet_posts');
 });
 
 
+function show_planets($attr , $content){
+	include(plugin_dir_path( __FILE__ ).'views/planets.php');
+}
 function planet_form($attr , $content){
 	include(plugin_dir_path( __FILE__ ).'views/Add_planet.php');
 }

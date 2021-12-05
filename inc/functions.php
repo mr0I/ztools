@@ -61,6 +61,24 @@ function update_all_woo_prices(){
 	}
 }
 
+function secureLink($url , $post , $str){
+  $input = get_post_meta($post->ID, $str, true);
+  $is_url = filter_var($url, FILTER_VALIDATE_URL);
+  if ($url !== '' && $is_url ){
+	$url = esc_url( $url, null, 'display' );
+	$url = trim($url, '/');
+	if (!preg_match('#^http(s)?://#', $url)) {
+	  $input = 'http://' . $url;
+	}
+	$urlParts = parse_url($input);
+	$domain = preg_replace('/^www\./', '', $urlParts['host']);
+	return $domain;
+  }else{
+	return 0;
+  }
+}
+
+
 
 
 
