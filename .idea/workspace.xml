@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/planets.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/planet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ztools.php" beforeDir="false" afterPath="$PROJECT_DIR$/ztools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/ztools-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ztools-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/planets.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/planets.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/ztools.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -38,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/inc/functions.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1525">
-              <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
               <folding>
                 <element signature="n#secureLink#0;n#!!top" />
               </folding>
@@ -49,14 +47,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/planets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-              <folding>
-                <element signature="e#1958#4049#0#HTML" />
-                <element signature="e#4805#7689#0#HTML" />
-                <element signature="e#7917#10250#0#HTML" />
-                <element signature="e#10295#12571#0#HTML" />
-              </folding>
+            <state relative-caret-position="321">
+              <caret line="248" column="40" lean-forward="true" selection-start-line="248" selection-start-column="40" selection-end-line="248" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="873">
+              <caret line="487" column="5" lean-forward="true" selection-start-line="487" selection-start-column="5" selection-end-line="487" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -73,11 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$post_id</find>
-      <find>ZEUS_INC</find>
-      <find>PlanetAdminAjax</find>
-      <find>dynamic_currency_rate</find>
-      <find>console.log</find>
       <find>admin_process</find>
       <find>calc_currency_rate</find>
       <find>get_the_ID</find>
@@ -103,6 +99,11 @@
       <find>$post_desc</find>
       <find>posts_per_page</find>
       <find>get_the_terms($post_id</find>
+      <find>'category'</find>
+      <find>$post_id</find>
+      <find>article__item__text__desc</find>
+      <find>از نویسندگان سیسوگ حمایت کنید</find>
+      <find>Sisoog</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
@@ -124,12 +125,10 @@
         <option value="$PROJECT_DIR$/views/Edit_planet.php" />
         <option value="$PROJECT_DIR$/views/Add_planet.php" />
         <option value="$PROJECT_DIR$/views/Show_planets.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/env.php" />
         <option value="$PROJECT_DIR$/env.example.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/views/author_posts.php" />
-        <option value="$PROJECT_DIR$/css/ztools-styles.css" />
         <option value="$PROJECT_DIR$/css/admin/admin-styles.css" />
         <option value="$PROJECT_DIR$/views/admin/metabox_echo.php" />
         <option value="$PROJECT_DIR$/views/admin/metabox.php" />
@@ -143,6 +142,8 @@
         <option value="$PROJECT_DIR$/planet.php" />
         <option value="$PROJECT_DIR$/ztools.php" />
         <option value="$PROJECT_DIR$/inc/functions.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/css/ztools-styles.css" />
         <option value="$PROJECT_DIR$/views/planets.php" />
       </list>
     </option>
@@ -159,13 +160,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
               <item name="ztools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ztools" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
@@ -181,6 +186,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,13 +198,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools" />
-      <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools\inc\libs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools\views\admin" />
       <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools\inc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools" />
+      <recent name="C:\xampp\htdocs\wp2\wp-content\plugins\ztools\inc\libs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -267,7 +273,8 @@
       <workItem from="1638338041641" duration="664000" />
       <workItem from="1638361324649" duration="1872000" />
       <workItem from="1638599327025" duration="18635000" />
-      <workItem from="1638682511942" duration="7725000" />
+      <workItem from="1638682511942" duration="8387000" />
+      <workItem from="1638769388683" duration="7681000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -294,15 +301,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188162000" />
+    <option name="totallyTimeSpent" value="196505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1609808" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16257995" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.2751896" />
@@ -401,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -417,13 +418,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/metabox.php" />
     <entry file="file://$PROJECT_DIR$/views/admin/metabox_echo.php" />
-    <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11712">
-          <caret line="488" column="26" selection-start-line="488" selection-start-column="26" selection-end-line="488" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/languages/ztools-fa_IR.po">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -515,6 +509,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Push.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/planet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -525,30 +529,31 @@
     <entry file="file://$PROJECT_DIR$/ztools.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1525">
-          <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding>
             <element signature="n#secureLink#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="873">
+          <caret line="487" column="5" lean-forward="true" selection-start-line="487" selection-start-column="5" selection-end-line="487" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/planets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="e#1958#4049#0#HTML" />
-            <element signature="e#4805#7689#0#HTML" />
-            <element signature="e#7917#10250#0#HTML" />
-            <element signature="e#10295#12571#0#HTML" />
-          </folding>
+        <state relative-caret-position="321">
+          <caret line="248" column="40" lean-forward="true" selection-start-line="248" selection-start-column="40" selection-end-line="248" selection-end-column="40" />
         </state>
       </provider>
     </entry>

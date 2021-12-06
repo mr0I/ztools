@@ -5,22 +5,10 @@ $loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورو
 ?>
 
 
-<?php get_header(); ?>
-
 <?php
-//$page_term = get_queried_object();
-
-?>
-<?php //get_template_part('parts/breadcrumbs'); ?>
-<?php
+get_header();
 get_template_part('parts/top', 'archive-electric');
-//if($page_term->slug == 'sisoogplanet'){
-//  get_template_part('parts/top', 'archive-electric');
-//}else{
-//  get_template_part('parts/top', 'archive');
-//}
 ?>
-
 
     <section class="archive-blog">
         <div class="container">
@@ -113,7 +101,6 @@ get_template_part('parts/top', 'archive-electric');
                         <div class="archive-blog__header__top__search">
                             <input type="text" name="search" placeholder="جستجو در آموزش ها ..." value="<?= isset($search) ? $search : ''; ?>">
                             <button> <i class="dn-search"></i></button>
-
                         </div>
                     </div>
                     <div class="archive-blog__header__bottom">
@@ -139,15 +126,15 @@ get_template_part('parts/top', 'archive-electric');
 				  <?php while ($query->have_posts()) : $query->the_post();
 				  $post_id = $post->ID;
 				  $post_image = get_the_post_thumbnail_url($post_id);
-				  $post_link = get_permalink($post_id);
-				  $post_title     = $post->post_title;
-				  $post_desc    = get_excerpt_content(600);
-				  $post_like        = post_like_count($post_id, 'like');
-				  $post_view        = get_views($post_id);
-				  $post_comments        = get_comments_number($post_id);
-				  $id_author    = $post->post_author;
+				  $post_link =  get_permalink($post_id);
+				  $post_title  = get_the_title($post);
+				  $post_desc = get_excerpt_content(600);
+				  $post_like  = post_like_count($post_id, 'like');
+				  $post_view  = get_views($post_id);
+				  $post_comments  = get_comments_number($post_id);
+				  $id_author = $post->post_author;
 				  $number_part = get_field('number_part', $post_id);
-				  $terms        = get_the_terms($post_id, 'zcategory');
+				  $terms  = get_the_terms($post_id, 'zcategory');
 				  ?>
 				  <?php if ($cnt == 9) : ?>
                       <div class="col-lg-12 col-sm-6">
