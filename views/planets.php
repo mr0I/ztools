@@ -1,11 +1,8 @@
 <?php
-/* Variables */
+// Variables
 $loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورود برای ریدایرکت شدن کاربر وارد نشده بعد از لایک
-/* Variables */
-?>
 
 
-<?php
 get_header();
 get_template_part('parts/top', 'archive-electric');
 ?>

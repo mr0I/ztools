@@ -1,4 +1,4 @@
-<?php if ( ! defined( 'ABSPATH' ) ) {die( 'Invalid request.' ); }
+<?php if ( ! defined( 'ABSPATH' ) ) { die( 'Invalid request.' ); }
 
 
 require_once plugin_dir_path( __FILE__ ) . '../env.php';
@@ -6,6 +6,7 @@ require_once plugin_dir_path( __FILE__ ) . '../env.php';
 global $wpdb;
 $usersTable = $wpdb->prefix . 'users';
 $postsTable = $wpdb->prefix . 'posts';
+$postMetaTable = $wpdb->prefix . 'postmeta';
 
 $user_id = $wpdb->get_var( "SELECT id FROM $usersTable WHERE display_name='$author_name' ");
 
@@ -13,9 +14,71 @@ $pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
 $limit =getenv('AUTHOR_POSTS_PAGINATE_COUNT'); // number of rows in page
 $offset = ( $pagenum - 1 ) * $limit;
 $total = $wpdb->get_var( "SELECT COUNT(`id`) FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' ");
-$author_posts = $wpdb->get_results( "SELECT * FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' ORDER BY post_date DESC LIMIT $offset,$limit");
 $num_of_pages = ceil( $total / $limit );
 $numrow = ($pagenum - 1) * $offset + 1;
+
+// sort options
+if (isset($_GET["filter"])) {
+  $sort = $_GET["filter"];
+
+  if ($sort == "newest") {
+//	$sortarray = [
+//		'order' => 'DESC',
+//		'orderby' => 'ID'
+//	];
+	//$args = $args + $sortarray;
+	$orderBy = 'ID';
+	$order = 'DESC';
+    $queryType = 'simple';
+  } elseif ($sort == "topviews") {
+//	$sortarray = ['meta_key' => 'views'];
+//	$args = $args + $sortarray;
+
+	$orderBy = 'ID';
+	$order = 'DESC';
+	$metaKey = 'views';
+	$queryType = 'join';
+  } elseif ($sort == "topcomments") {
+//	$sortarray = [
+//		'order' => 'DESC',
+//		'orderby' => 'comment_count'
+//	];
+//	$args = $args + $sortarray;
+	$orderBy = 'comment_count';
+	$order = 'DESC';
+	$queryType = 'simple';
+  } elseif ($sort == "toplikes") {
+//	$sortarray = [
+//		'meta_key' => 'post_like',
+//	];
+//	$args = $args + $sortarray;
+
+	$orderBy = 'ID';
+	$order = 'DESC';
+	$metaKey = 'post_like';
+	$queryType = 'join';
+  }
+} else {
+//  $sortarray = [
+//	  'order' => 'DESC',
+//	  'orderby' => 'ID'
+//  ];
+  //$args = $args + $sortarray;
+  $orderBy = 'ID';
+  $order = 'DESC';
+  $queryType = 'simple';
+}
+
+
+if ($queryType==='simple'){
+    $author_posts = $wpdb->get_results( "SELECT * FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' 
+    ORDER BY $orderBy $order LIMIT $offset,$limit");
+} else {
+    $author_posts = $wpdb->get_results( "SELECT * FROM wp_posts p JOIN wp_postmeta pm ON pm.meta_key='$metaKey' WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' 
+     ORDER BY $orderBy $order LIMIT $offset,$limit");
+}
+
+
 
 // Set Custom Title
 global $my_custom_title;
@@ -23,160 +86,133 @@ $my_custom_title = ' نوشته های ' . $author_name;
 get_header();
 ?>
 
-<?php
-if ($user_id === null){
-	?><div class="alert alert-warning w-100 text-center" role="alert">مطلبی برای نمایش وجود ندارد!</div><?php
-}
-?>
+<div class="container">
+    <div class="breadcrumbs breadcrumbs--border-top">
+        <ul itemprop="breadcrumb" id="breadcrumbs" class="breadcrumbs">
+            <li class="item-home">
+                <a class="bread-link bread-home" href="https://new.sisoog.com" title="صفحه نخست">صفحه نخست</a>
+            </li>
+            <li class="item-current item-archive"><span class="bread-current bread-archive"> نوشته های  <?= $author_name ?> </span></li>
+        </ul>
+    </div>
 
-<div class="main-page-wrapper m-auto">
-	<div class="container">
-		<div class="row content-layout-wrapper align-items-start ">
-			<div class="site-content col-12 author-posts-container" role="main">
-				<?php
-				foreach ($author_posts as $post){
+    <section class="download">
+        <div class="container">
+
+            <div class="archive-blog__header">
+                <div class="archive-blog__header__top">
+                    <div class="archive-blog__header__top__title">
+                        <i class="dn-menu2"></i>
+                        <h3> نوشته های  <?= $author_name ?> </h3>
+                        <span><?= $total ?>  مورد </span>
+                    </div>
+                    <form action="/" class="archive-blog__header__top__search">
+                        <input name="s" type="text" placeholder="جستجو در نوشته ها ...">
+                        <input type="hidden" value="project" name="post_type">
+                        <i class="dn-search"></i>
+                    </form>
+                </div>
+                <div class="archive-blog__header__bottom">
+                    <form action="" method="get" class="archive-blog__header__bottom__filter">
+                        <select name="filter" id="filter-download" class="form-select">
+                            <option value="newest" <?= (isset($sort) && $sort == 'newest') ? 'selected' : ''; ?>>جدیدترین ها</option>
+                            <option value="topviews" <?= (isset($sort) && $sort == 'topviews') ? 'selected' : ''; ?>>پر بازدیدترین ها</option>
+                            <option value="topcomments" <?= (isset($sort) && $sort == 'topcomments') ? 'selected' : ''; ?>>پر بحث ترین ها</option>
+                            <option value="toplikes" <?= (isset($sort) && $sort == 'toplikes') ? 'selected' : ''; ?>>محبوب ترین ها</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+            <div class="download__list">
+                <div class="row">
+				  <?php
+
+				  if ($user_id === null){
+					?><div class="alert alert-warning w-100 text-center" role="alert">مطلبی برای نمایش وجود ندارد!</div><?php
+				  }
+
+				  foreach ($author_posts as $post){
+					$post_id = $post->ID;
+					$post_image = get_the_post_thumbnail_url($post_id);
+					$post_link =  get_permalink($post_id);
+					$post_title  = get_the_title($post);
+					$post_desc = get_the_excerpt($post) . '...';
+					$post_like  = post_like_count($post_id, 'like');
+					$post_view  = get_views($post_id);
+					$post_comments  = get_comments_number($post_id);
+					$id_author = $post->post_author;
+					$number_part = get_field('number_part', $post_id);
+					$terms  = get_the_terms($post_id, 'zcategory');
 					?>
-					<div class="wd-blog-holder blog-pagination-pagination" id="60f48c1924b8a" data-paged="1" data-source="main_loop">
-						<article id="post-<?= $post->ID ?>" class="blog-design-small-images blog-post-loop blog-style-shadow post-54233 post type-post status-publish format-standard has-post-thumbnail hentry">
-							<div class="article-inner">
-								<header class="entry-header">
-									<figure id="" class="entry-thumbnail">
-
-										<div class="post-img-wrapp">
-											<a href="<?= get_permalink($post->ID) ;?>">
-												<img width="900" height="431" class="attachment-large wp-post-image lazyloaded" src="<?= get_the_post_thumbnail_url($post->ID , 'full'); ?>"  alt="<?= $post->post_title; ?>" sizes="(max-width: 900px) 100vw, 900px" srcset="">
-											</a>
-										</div>
-
-										<div class="post-image-mask">
-											<span></span>
-										</div>
-									</figure>
-									<div class="post-date wd-post-date wd-style-with-bg woodmart-post-date" onclick="">
-										<?php
-										// Shamsi Date
-										include_once ZEUS_INC . '/libs/jdatetime.class.php';
-										$date = new jDateTime(true, true, 'Asia/Tehran');
-										$post_date_day = $date->date("d" , strtotime($post->post_date));
-										$post_date_month = $date->date("F" , strtotime($post->post_date));
-										?>
-										<span class="post-date-day"><?= $post_date_day ?></span>
-										<span class="post-date-month"><?= $post_date_month ?></span>
-									</div>
-
-								</header><!-- .entry-header -->
-
-								<div class="article-body-container">
-									<div class="meta-categories-wrapp">
-										<div class="meta-post-categories wd-post-cat wd-style-with-bg">
-											<?php
-											$post_categories = wp_get_post_categories( $post->ID );
-											$cats = [];
-											$counter1 = 0;
-											$counter2 = 0;
-											foreach($post_categories as $c){
-												$counter1++;
-											}
-											foreach($post_categories as $c){
-												$counter2++;
-												$cat = get_category( $c );
-												?>
-												<a href="<?= get_site_url().'/category/'.$cat->slug; ?>"><?= $cat->name; ?></a>
-												<?php
-												if($counter2 < $counter1){
-													echo ' , ';
-												}
-											}
-											?>
-										</div>
-									</div>
-
-									<h3 class="wd-entities-title title post-title">
-										<a href="<?= get_permalink($post->ID) ?>" rel="bookmark"><?= $post->post_title ?></a>
-									</h3>
-
-									<div class="entry-meta wd-entry-meta">
-										<ul class="entry-meta-list">
-											<li class="meta-author" style="display: none">
-												توسط
-												<img data-del="avatar" alt="author-avatar" src="<?= get_avatar_url($post->post_author) ; ?>" class="avatar pp-user-avatar avatar-32 photo lazyloaded" height="32" width="32" data-ll-status="loaded">
-												<a href="https://sisoog.com/author/<?= $author_name ?>/" rel="author">
-											<span class="vcard author author_name">
-												<span class="fn"><?= $author_name ?></span>
-											</span>
-												</a>
-											</li>
-
-											<li class="meta-reply">
-												<a href="<?= get_permalink($post->ID) ?>#comments">
-													<span class="replies-count"><?= get_comments_number($post->ID) ; ?></span> <span class="replies-count-label">دیدگاه</span>
-												</a>
-											</li>
-										</ul>
-									</div><!-- .entry-meta -->
-									<div class="hovered-social-icons wd-tltp wd-tltp-top">
-										<div class="wd-tooltip-label">
-											<div class="wd-social-icons woodmart-social-icons text-center icons-design-default icons-size-small color-scheme-light social-share social-form-circle">
-												<a rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?= urlencode(get_permalink($post->ID)); ?>" target="_blank" class=" wd-social-icon social-facebook">
-													<span class="wd-icon"></span>
-												</a>
-												<a rel="noopener noreferrer nofollow" href="https://twitter.com/share?url=<?= urlencode(get_permalink($post->ID)); ?>" target="_blank" class=" wd-social-icon social-twitter">
-													<span class="wd-icon"></span>
-												</a>
-												<a rel="noopener noreferrer nofollow" href="mailto:?subject=Check%20this%20<?= urlencode(get_permalink($post->ID)); ?>" target="_blank" class=" wd-social-icon social-email">
-													<span class="wd-icon"></span>
-												</a>
-												<a rel="noopener noreferrer nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<?= urlencode(get_permalink($post->ID)); ?>" target="_blank" class=" wd-social-icon social-linkedin">
-													<span class="wd-icon"></span>
-												</a>
-												<a rel="noopener noreferrer nofollow" href="https://api.whatsapp.com/send?text=<?= urlencode(get_permalink($post->ID)); ?>" target="_blank" class="whatsapp-desktop  wd-social-icon social-whatsapp">
-													<span class="wd-icon"></span>
-												</a>
-												<a rel="noopener noreferrer nofollow" href="whatsapp://send?text=<?= urlencode(get_permalink($post->ID)); ?>" target="_blank" class="whatsapp-mobile  wd-social-icon social-whatsapp">
-													<span class="wd-icon"></span>
-												</a>
-												<a rel="noopener noreferrer nofollow" href="https://telegram.me/share/url?url=<?= urlencode(get_permalink($post->ID)); ?>" target="_blank" class=" wd-social-icon social-tg">
-													<span class="wd-icon"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-
-									<div class="entry-content wd-entry-content woodmart-entry-content">
-										<?= $post->post_excerpt ?>
-										<p class="read-more-section">
-											<a class="btn btn-color-primary btn-read-more more-link" href="<?= get_permalink($post->ID); ?>">ادامه مطلب</a>
-										</p>
-									</div><!-- .entry-content -->
-
-								</div>
-							</div>
-						</article><!-- #post -->
-					</div>
-
+                      <div class="col-lg-4 col-md-6">
+                          <div class="download__list__item">
+                              <a href="<?= $post_link ?>"></a>
+                              <div class="download__list__item__top">
+                                  <div class="download__list__item__top__image">
+                                      <img width="70" height="70" src="<?= $post_image ?>" class="attachment-70x70 size-70x70 wp-post-image"
+                                           alt="<?= $post_title ?>" loading="lazy" sizes="(max-width: 70px) 100vw, 70px">                                                </div>
+                                  <div class="download__list__item__top__text">
+                                      <div class="download__list__item__top__text__title">
+                                          <h3><?= $post_title ?></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="download__list__item__desc">
+                                  <p><?= $post_desc ?></p>
+                              </div>
+                              <div class="download__list__item__info">
+                                  <div class="download__list__item__info__author">
+                                      <img src="<?= get_avatar_url($post->post_author) ; ?>" class="gravatar avatar avatar-25 um-avatar um-avatar-uploaded"
+                                           width="25" height="25" alt="<?= $author_name ?>"
+                                           onerror="if ( ! this.getAttribute('data-load-error') ){ this.setAttribute('data-load-error', '1');this.setAttribute('src', this.getAttribute('data-default'));}">
+                                      <span><?= $author_name ?></span>
+                                  </div>
+                                  <div class="download__list__item__info__detail">
+                                      <ul>
+                                          <li>
+                                              <i class="dn-comment"></i><?= wp_count_comments($post_id)->approved ?>
+                                          </li>
+                                          <li>
+                                              <i class="dn-bar-chart"></i><?= get_post_meta($post_id, 'views', true) ?>
+                                          </li>
+                                          <li>
+                                              <i class="dn-favorite"></i><?= post_like_count($post_id, 'post_like') ?>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="download__list__item__info__button">
+                                      <a href="<?= $post_link ?>"><i class="dn-download"></i>ادامه و
+                                          دانلود</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
 					<?php
-				}
-				?>
+				  }
+				  ?>
+                </div>
 
-				<div class="wd-loop-footer blog-footer">
-					<?php
-					$page_links = paginate_links( array(
-						'base' => add_query_arg( 'pagenum', '%#%' ),
-						'format' => '',
-						'prev_text' => '&laquo;',
-						'next_text' => '&raquo;',
-						'total' => $num_of_pages,
-						'current' => $pagenum
-					) );
-					if ( $page_links ) {
-						echo '<div class="tablenav"><div class="tablenav-pages" style="margin: 1em 0">' . $page_links . '</div></div>';
-					}
-					?>
-				</div>
-			</div><!-- .site-content -->
 
-		</div><!-- .main-page-wrapper -->
-	</div>
+                <div class="pagination__list">
+				  <?php
+				  $page_links = paginate_links( array(
+					  'base' => add_query_arg( 'pagenum', '%#%' ),
+					  'format' => '',
+					  'type' => 'list',
+					  'prev_text' => '&laquo;',
+					  'next_text' => '&raquo;',
+					  'total' => $num_of_pages,
+					  'current' => $pagenum
+				  ) );
+				  if ( $page_links ) {
+					echo '<div class="tablenav"><div class="tablenav-pages" style="margin: 1em 0">' . $page_links . '</div></div>';
+				  }
+				  ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </div>
 
