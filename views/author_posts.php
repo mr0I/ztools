@@ -1,6 +1,5 @@
 <?php if ( ! defined( 'ABSPATH' ) ) { die( 'Invalid request.' ); }
 
-
 require_once plugin_dir_path( __FILE__ ) . '../env.php';
 
 global $wpdb;
@@ -9,61 +8,34 @@ $postsTable = $wpdb->prefix . 'posts';
 $postMetaTable = $wpdb->prefix . 'postmeta';
 
 $user_id = $wpdb->get_var( "SELECT id FROM $usersTable WHERE display_name='$author_name' ");
-
 $pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
 $limit =getenv('AUTHOR_POSTS_PAGINATE_COUNT'); // number of rows in page
 $offset = ( $pagenum - 1 ) * $limit;
-$total = $wpdb->get_var( "SELECT COUNT(`id`) FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' ");
-$num_of_pages = ceil( $total / $limit );
-$numrow = ($pagenum - 1) * $offset + 1;
 
 // sort options
 if (isset($_GET["filter"])) {
   $sort = $_GET["filter"];
 
   if ($sort == "newest") {
-//	$sortarray = [
-//		'order' => 'DESC',
-//		'orderby' => 'ID'
-//	];
-	//$args = $args + $sortarray;
 	$orderBy = 'ID';
 	$order = 'DESC';
-    $queryType = 'simple';
+	$queryType = 'simple';
   } elseif ($sort == "topviews") {
-//	$sortarray = ['meta_key' => 'views'];
-//	$args = $args + $sortarray;
-
 	$orderBy = 'ID';
 	$order = 'DESC';
 	$metaKey = 'views';
 	$queryType = 'join';
   } elseif ($sort == "topcomments") {
-//	$sortarray = [
-//		'order' => 'DESC',
-//		'orderby' => 'comment_count'
-//	];
-//	$args = $args + $sortarray;
 	$orderBy = 'comment_count';
 	$order = 'DESC';
 	$queryType = 'simple';
   } elseif ($sort == "toplikes") {
-//	$sortarray = [
-//		'meta_key' => 'post_like',
-//	];
-//	$args = $args + $sortarray;
-
 	$orderBy = 'ID';
 	$order = 'DESC';
 	$metaKey = 'post_like';
 	$queryType = 'join';
   }
 } else {
-//  $sortarray = [
-//	  'order' => 'DESC',
-//	  'orderby' => 'ID'
-//  ];
-  //$args = $args + $sortarray;
   $orderBy = 'ID';
   $order = 'DESC';
   $queryType = 'simple';
@@ -71,18 +43,19 @@ if (isset($_GET["filter"])) {
 
 
 if ($queryType==='simple'){
-    $author_posts = $wpdb->get_results( "SELECT * FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' 
+  $author_posts = $wpdb->get_results( "SELECT * FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' 
     ORDER BY $orderBy $order LIMIT $offset,$limit");
+  $total = $wpdb->get_var( "SELECT COUNT(`id`) FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' ");
 } else {
-    $author_posts = $wpdb->get_results( "SELECT * FROM wp_posts p JOIN wp_postmeta pm ON pm.meta_key='$metaKey' WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' 
-     ORDER BY $orderBy $order LIMIT $offset,$limit");
+  $author_posts = $wpdb->get_results( "SELECT * FROM $postsTable p JOIN $postMetaTable pm ON p.ID=pm.post_id AND pm.meta_key='$metaKey'
+    WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' 
+     ORDER BY pm.meta_value $order LIMIT $offset,$limit");
+  $total = $wpdb->get_var( "SELECT COUNT(`id`) FROM $postsTable p JOIN $postMetaTable pm ON p.ID=pm.post_id AND pm.meta_key='$metaKey' 
+    WHERE post_author='$user_id' AND post_status='publish' AND post_type='post'");
 }
+$num_of_pages = ceil( $total / $limit );
+$numrow = ($pagenum - 1) * $offset + 1;
 
-
-
-// Set Custom Title
-global $my_custom_title;
-$my_custom_title = ' نوشته های ' . $author_name;
 get_header();
 ?>
 
@@ -90,7 +63,7 @@ get_header();
     <div class="breadcrumbs breadcrumbs--border-top">
         <ul itemprop="breadcrumb" id="breadcrumbs" class="breadcrumbs">
             <li class="item-home">
-                <a class="bread-link bread-home" href="https://new.sisoog.com" title="صفحه نخست">صفحه نخست</a>
+                <a class="bread-link bread-home" href="<?= site_url() ?>" title="صفحه نخست">صفحه نخست</a>
             </li>
             <li class="item-current item-archive"><span class="bread-current bread-archive"> نوشته های  <?= $author_name ?> </span></li>
         </ul>
@@ -116,9 +89,7 @@ get_header();
                     <form action="" method="get" class="archive-blog__header__bottom__filter">
                         <select name="filter" id="filter-download" class="form-select">
                             <option value="newest" <?= (isset($sort) && $sort == 'newest') ? 'selected' : ''; ?>>جدیدترین ها</option>
-                            <option value="topviews" <?= (isset($sort) && $sort == 'topviews') ? 'selected' : ''; ?>>پر بازدیدترین ها</option>
                             <option value="topcomments" <?= (isset($sort) && $sort == 'topcomments') ? 'selected' : ''; ?>>پر بحث ترین ها</option>
-                            <option value="toplikes" <?= (isset($sort) && $sort == 'toplikes') ? 'selected' : ''; ?>>محبوب ترین ها</option>
                         </select>
                     </form>
                 </div>
@@ -129,7 +100,9 @@ get_header();
 				  <?php
 
 				  if ($user_id === null){
-					?><div class="alert alert-warning w-100 text-center" role="alert">مطلبی برای نمایش وجود ندارد!</div><?php
+					?><div class="alert alert-warning w-100 text-center" role="alert">
+                          <?= _e( 'There\'s nothing to show','ztools' ); ?>
+                      </div><?php
 				  }
 
 				  foreach ($author_posts as $post){
@@ -141,7 +114,6 @@ get_header();
 					$post_like  = post_like_count($post_id, 'like');
 					$post_view  = get_views($post_id);
 					$post_comments  = get_comments_number($post_id);
-					$id_author = $post->post_author;
 					$number_part = get_field('number_part', $post_id);
 					$terms  = get_the_terms($post_id, 'zcategory');
 					?>
@@ -192,7 +164,6 @@ get_header();
 				  }
 				  ?>
                 </div>
-
 
                 <div class="pagination__list">
 				  <?php

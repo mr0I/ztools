@@ -46,7 +46,6 @@ get_template_part('parts/top', 'archive-electric');
 			  ];
 			  $args = $args + $sortarray;
 			} elseif ($sort == "topviews") {
-
 			  $sortarray = ['meta_key' => 'views'];
 			  $args = $args + $sortarray;
 			} elseif ($sort == "topcomments") {
@@ -109,9 +108,7 @@ get_template_part('parts/top', 'archive-electric');
                         <div class="archive-blog__header__bottom__filter">
                             <select class="form-select" name="sort">
                                 <option value="newest" <?= (isset($sort) && $sort == 'newest') ? 'selected' : ''; ?>>جدیدترین ها</option>
-                                <option value="topviews" <?= (isset($sort) && $sort == 'topviews') ? 'selected' : ''; ?>>پر بازدیدترین ها</option>
                                 <option value="topcomments" <?= (isset($sort) && $sort == 'topcomments') ? 'selected' : ''; ?>>پر بحث ترین ها</option>
-                                <option value="toplikes" <?= (isset($sort) && $sort == 'toplikes') ? 'selected' : ''; ?>>محبوب ترین ها</option>
                             </select>
                         </div>
                     </div>
@@ -129,7 +126,6 @@ get_template_part('parts/top', 'archive-electric');
 				  $post_like  = post_like_count($post_id, 'like');
 				  $post_view  = get_views($post_id);
 				  $post_comments  = get_comments_number($post_id);
-				  $id_author = $post->post_author;
 				  $number_part = get_field('number_part', $post_id);
 				  $terms  = get_the_terms($post_id, 'zcategory');
 				  ?>
@@ -148,8 +144,8 @@ get_template_part('parts/top', 'archive-electric');
                                   </div>
                                   <div class="article__item__text__detail">
                                       <div class="article__item__text__detail__author">
-                                          <img src="<?= get_avatar_url($id_author) ?>" alt="">
-                                          <a href="<?= get_author_posts_url($id_author) ?>" title="<?= get_the_author_meta('display_name', $id_author) ?>"><span><?= get_the_author_meta('display_name', $id_author) ?></span></a>
+										<?php echo get_avatar(get_the_author_meta('ID')); ?>
+                                          <a href="<?= get_author_posts_url($post->post_author) ?>" title="<?= get_the_author_meta('display_name', $post->post_author) ?>"><span><?= get_the_author_meta('display_name', $post->post_author) ?></span></a>
                                       </div>
                                       <div class="article__item__text__detail__info">
                                           <ul>
@@ -205,8 +201,8 @@ get_template_part('parts/top', 'archive-electric');
                                 </div>
                                 <div class="article__item__text__detail">
                                     <div class="article__item__text__detail__author">
-                                        <img src="<?= get_avatar_url($id_author) ?>" alt="">
-                                        <a href="<?= get_author_posts_url($id_author) ?>" title="<?= get_the_author_meta('display_name', $id_author) ?>"><span><?= get_the_author_meta('display_name', $id_author) ?></span></a>
+									  <?php echo get_avatar(get_the_author_meta('ID')); ?>
+                                        <a href="<?= get_author_posts_url($post->post_author) ?>" title="<?= get_the_author_meta('display_name', $post->post_author) ?>"><span><?= get_the_author_meta('display_name', $post->post_author) ?></span></a>
                                     </div>
                                     <div class="article__item__text__detail__info">
                                         <ul>
@@ -249,8 +245,8 @@ get_template_part('parts/top', 'archive-electric');
                                   </div>
                                   <div class="article__item__text__detail">
                                       <div class="article__item__text__detail__author">
-                                          <img src="<?= get_avatar_url($id_author) ?>" alt="">
-                                          <span><?= get_the_author_meta('display_name', $id_author) ?></span>
+										<?= get_avatar(get_the_author_meta('ID')); ?>
+                                          <span><?= get_the_author_meta('display_name', $post->post_author) ?></span>
                                       </div>
                                       <div class="article__item__text__detail__info">
                                           <ul>

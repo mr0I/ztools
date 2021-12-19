@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zeus Tools\n"
-"POT-Creation-Date: 2021-08-07 12:10+0430\n"
-"PO-Revision-Date: 2021-08-07 12:10+0430\n"
+"POT-Creation-Date: 2021-12-19 10:42+0330\n"
+"PO-Revision-Date: 2021-12-19 10:43+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -21,226 +21,225 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: planet.php:11
+#: planet.php:21
 msgid "Planet"
 msgstr "سیاره سیسوگ"
 
-#: planet.php:12
+#: planet.php:22
 msgid "link"
 msgstr "لینک"
 
-#: planet.php:13 planet.php:14
+#: planet.php:23 planet.php:24
 msgid "add link"
 msgstr "افزودن لینک"
 
-#: planet.php:15
+#: planet.php:25
 msgid "new link"
 msgstr "لینک جدید"
 
-#: planet.php:16
+#: planet.php:26
 msgid "edit link"
 msgstr "ویرایش لینک"
 
-#: planet.php:17
+#: planet.php:27
 msgid "show link"
 msgstr "نمایش لینک"
 
-#: planet.php:18
+#: planet.php:28
 msgid "all links"
 msgstr "همه لینک ها"
 
-#: planet.php:19
+#: planet.php:29
 msgid "search link"
 msgstr "جستجوی لینک"
 
-#: planet.php:21
+#: planet.php:31
 msgid "links not found"
 msgstr "لینک پیدا نشد"
 
-#: planet.php:22
+#: planet.php:32
 msgid "not link found in trash"
 msgstr "لینکی در سطل زباله یافت نشد"
 
-#: planet.php:48 planet.php:50
+#: planet.php:58 planet.php:60
 msgid "Planet Category"
 msgstr "دسته بندی سیاره"
 
-#: planet.php:49
+#: planet.php:59
 msgid "category"
 msgstr "دسته"
 
-#: planet.php:51
+#: planet.php:61
 msgid "all category"
 msgstr "همه دسته ها"
 
-#: planet.php:52
+#: planet.php:62
 msgid "edit category"
 msgstr "ویرایش دسته"
 
-#: planet.php:53
+#: planet.php:63
 msgid "view category"
 msgstr "مشاهده دسته"
 
-#: planet.php:54
+#: planet.php:64
 msgid "update category"
 msgstr "ویرایش دسته"
 
-#: planet.php:55
+#: planet.php:65
 msgid "add new category"
 msgstr "افزودن دسته جدید"
 
-#: planet.php:56
+#: planet.php:66
 msgid "new category name"
 msgstr "نام دسته جدید"
 
-#: planet.php:57
+#: planet.php:67
 msgid "parent"
 msgstr "والد"
 
-#: planet.php:58
+#: planet.php:68
 msgid "parent:"
 msgstr "والد:"
 
-#: planet.php:59
+#: planet.php:69
 msgid "search"
 msgstr "جستجو"
 
-#: planet.php:87
+#: planet.php:97
 msgid "tags"
 msgstr "برچسب ها"
 
-#: planet.php:88
+#: planet.php:98
 msgid "tag"
 msgstr "تگ"
 
-#: planet.php:89
+#: planet.php:99
 msgid "Planet Tag"
 msgstr "تگ سیاره"
 
-#: planet.php:90
+#: planet.php:100
 msgid "all tag"
 msgstr "همه تگ ها"
 
-#: planet.php:91
+#: planet.php:101
 msgid "edit tag"
 msgstr "ویرایش تگ"
 
-#: planet.php:92
+#: planet.php:102
 msgid "view tag"
 msgstr "مشاهده تگ"
 
-#: planet.php:93
+#: planet.php:103
 msgid "update tag"
 msgstr "بروزرسانی تگ"
 
-#: planet.php:94
+#: planet.php:104
 msgid "add new tag"
 msgstr "افزودن تگ جدید"
 
-#: planet.php:95
+#: planet.php:105
 msgid "new tag name"
 msgstr "نام تگ جدید"
 
-#: planet.php:98
+#: planet.php:108
 msgid "search tag"
 msgstr "جستجوی تگ"
 
-#: planet.php:99 planet.php:100
+#: planet.php:109 planet.php:110
 msgid "popular tag"
 msgstr "تگ محبوب"
 
-#: planet.php:101
+#: planet.php:111
 msgid "separate tag with commas"
 msgstr "جدا کردن تگ با کامنت"
 
-#: planet.php:102
+#: planet.php:112
 msgid "choose from most used"
 msgstr "استفاده از میان پرکابردها"
 
-#: planet.php:103
+#: planet.php:113
 msgid "not found"
 msgstr "یافت نشد"
 
-#: planet.php:120
+#: planet.php:130
 msgid "URL"
 msgstr "آدرس اینترنتی"
 
-#: planet.php:129
+#: planet.php:139
 msgid "like:"
 msgstr "مانند :"
 
-#: planet.php:183
+#: planet.php:192
 msgid "About"
 msgstr ""
 
-#: planet.php:191
+#: planet.php:200
 #, fuzzy
 #| msgid "Ztools Settings"
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: planet.php:213
+#: planet.php:221
 msgid "Main Page Settings"
 msgstr "تنظیمات اصلی"
 
-#: planet.php:214 views/admin/admin_process.php:33
-#: views/admin/admin_process.php:34
+#: planet.php:222 views/admin/admin_process.php:33
 msgid "Exchange Rate Settings"
 msgstr "تنظیمات نرخ تبدیل"
 
-#: planet.php:437 planet.php:448 planet.php:496 planet.php:616
+#: planet.php:448 planet.php:459 planet.php:507 planet.php:627
 msgid "Last Planets"
 msgstr "آخرین مطالب سیاره"
 
-#: planet.php:439
+#: planet.php:450
 msgid "Show last planet posts by ..."
 msgstr "نمایش آخرین مطالب سیاره بر اساس تاریخ، تعداد کامنت و ..."
 
-#: planet.php:454 planet.php:597
+#: planet.php:465 planet.php:608
 msgid "title"
 msgstr "عنوان"
 
-#: planet.php:459
+#: planet.php:470
 msgid "Sorting By"
 msgstr "مرتب سازی بر اساس"
 
-#: planet.php:462
+#: planet.php:473
 msgid "Date"
 msgstr "تاریخ"
 
-#: planet.php:463
+#: planet.php:474
 msgid "Likes Count"
 msgstr "تعداد لایک"
 
-#: planet.php:464
+#: planet.php:475
 msgid "Comments Count"
 msgstr "تعداد کامنت"
 
-#: planet.php:468
+#: planet.php:479
 msgid "Ascending"
 msgstr "صعودی"
 
-#: planet.php:470
+#: planet.php:481
 msgid "Descending"
 msgstr "نزولی"
 
-#: planet.php:474
+#: planet.php:485
 msgid "Count"
 msgstr "تعداد"
 
-#: planet.php:555
+#: planet.php:566
 msgid "Comments"
 msgstr "دیدگاه"
 
-#: planet.php:559
+#: planet.php:570
 msgid "Likes"
 msgstr "لایک"
 
-#: planet.php:584 planet.php:594
+#: planet.php:595 planet.php:605
 msgid "Planets Categories"
 msgstr "دسته بندی سیاره"
 
-#: planet.php:586
+#: planet.php:597
 msgid "Show Planet Categories."
 msgstr "نمایش دسته بندی سیاره"
 
@@ -497,13 +496,17 @@ msgstr "تعداد پست ها در هر صفحه (برای دسته بندی)"
 msgid "Login Url"
 msgstr "لینک ورود به سایت"
 
-#: views/admin/admin_process.php:36
+#: views/admin/admin_process.php:34
 msgid "Dollar Value"
 msgstr "قیمت دلار (به تومان)"
 
-#: views/admin/admin_process.php:38
+#: views/admin/admin_process.php:36
 msgid "Yuan Value"
 msgstr "قیمت یوان (به تومان)"
+
+#: views/author_posts.php:143
+msgid "There's nothing to show"
+msgstr "مطلبی برای نمایش وجود ندارد!"
 
 #. Plugin Name of the plugin/theme
 msgid "Zeus Tools"
