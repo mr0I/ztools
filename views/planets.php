@@ -4,7 +4,6 @@ $loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورو
 
 
 get_header();
-get_template_part('parts/top', 'archive-electric');
 ?>
 
     <section class="archive-blog">

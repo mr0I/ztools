@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ztools-fa_IR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ztools-fa_IR.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ztools-fa_IR.po" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ztools-fa_IR.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/author_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/author_posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/planets.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/planets.php" afterDir="false" />
     </list>
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/planet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="256" column="31" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="31" />
+            <state relative-caret-position="50">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -28,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ztools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-439">
+            <state relative-caret-position="-739">
               <caret line="8" column="22" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
@@ -37,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/planets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="247" column="43" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
+            <state relative-caret-position="150">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -46,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/author_posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="250">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -58,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="12175">
               <caret line="487" column="5" selection-start-line="487" selection-start-column="5" selection-end-line="487" selection-end-column="5" />
             </state>
           </provider>
@@ -76,9 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wp_bootstrap4_pagination</find>
-      <find>$post_desc</find>
-      <find>posts_per_page</find>
       <find>get_the_terms($post_id</find>
       <find>'category'</find>
       <find>$post_id</find>
@@ -106,6 +101,9 @@
       <find>$id_author</find>
       <find>show_planets</find>
       <find>get_avatar_url</find>
+      <find>lugins/v1/icpanel</find>
+      <find>icpanel</find>
+      <find>@</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
@@ -170,11 +168,6 @@
             <path>
               <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
               <item name="ztools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ztools" type="462c0819:PsiDirectoryNode" />
-              <item name="languages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
@@ -281,7 +274,10 @@
       <workItem from="1639645927031" duration="2585000" />
       <workItem from="1639813370509" duration="14930000" />
       <workItem from="1639890702457" duration="3142000" />
-      <workItem from="1639897688863" duration="7295000" />
+      <workItem from="1639897688863" duration="7656000" />
+      <workItem from="1639988256892" duration="18000" />
+      <workItem from="1639988347095" duration="118000" />
+      <workItem from="1640413448283" duration="3678000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -308,16 +304,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230275000" />
+    <option name="totallyTimeSpent" value="234450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15565032" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16044776" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32887402" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32887402" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.2742475" />
@@ -528,39 +524,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="12175">
           <caret line="487" column="5" selection-start-line="487" selection-start-column="5" selection-end-line="487" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/author_posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ztools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439">
+        <state relative-caret-position="-739">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/planet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="256" column="31" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="31" />
+        <state relative-caret-position="50">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/author_posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/planets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="247" column="43" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

@@ -56,6 +56,11 @@ if ($queryType==='simple'){
 $num_of_pages = ceil( $total / $limit );
 $numrow = ($pagenum - 1) * $offset + 1;
 
+
+// Set Custom Title
+global $authorPostsTitle;
+$authorPostsTitle = ' نوشته های ' . $author_name;
+
 get_header();
 ?>
 
