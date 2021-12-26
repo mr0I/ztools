@@ -60,7 +60,6 @@ $numrow = ($pagenum - 1) * $offset + 1;
 // Set Custom Title
 global $authorPostsTitle;
 $authorPostsTitle = ' نوشته های ' . $author_name;
-
 get_header();
 ?>
 
@@ -76,19 +75,14 @@ get_header();
 
     <section class="download">
         <div class="container">
-
             <div class="archive-blog__header">
-                <div class="archive-blog__header__top">
+                <div class="archive-blog__header__top justify-content-between">
                     <div class="archive-blog__header__top__title">
                         <i class="dn-menu2"></i>
                         <h3> نوشته های  <?= $author_name ?> </h3>
                         <span><?= $total ?>  مورد </span>
                     </div>
-                    <form action="/" class="archive-blog__header__top__search">
-                        <input name="s" type="text" placeholder="جستجو در نوشته ها ...">
-                        <input type="hidden" value="project" name="post_type">
-                        <i class="dn-search"></i>
-                    </form>
+                    <p class="ztools-author-profile"><a href="<?= site_url().'/user/'.$author_name ?>">پروفایل نویسنده</a></p>
                 </div>
                 <div class="archive-blog__header__bottom">
                     <form action="" method="get" class="archive-blog__header__bottom__filter">

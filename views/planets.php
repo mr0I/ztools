@@ -2,7 +2,6 @@
 // Variables
 $loginUrl = get_option('ztools_planet_loginUrl',''); // آدرس صفحه ورود برای ریدایرکت شدن کاربر وارد نشده بعد از لایک
 
-
 get_header();
 ?>
 

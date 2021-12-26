@@ -486,6 +486,13 @@
 		background-color: #e5490a;
 		color: #eeeeee;
 	}
+	.ztools-author-profile > a{
+		color: #841d7a;
+		font-weight: bold;
+		font-size: 115%;
+		padding: 0 10px;
+		text-decoration: underline;
+	}
 	/* End Author Posts */
 
 
@@ -498,6 +505,7 @@
 		text-align: center;
 	}
 	/* End Planets For Custom Theme */
+
 
 
 
