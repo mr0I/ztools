@@ -3,8 +3,8 @@
 
 function set_product_price($product_id){
 	// Calculate Currency Rate
-	$dollarValue = get_option('Ztools_exrate_dollar', '');
-	$yuanValue = get_option('Ztools_exrate_yuan', '');
+	$dollarValue = get_option('Ztools_exrate_dollar', 25000);
+	$yuanValue = get_option('Ztools_exrate_yuan', 3900);
 	$currency_type = get_post_meta($product_id , 'ztools_currency_type' , true);
 	$currency_rate = floatval(get_post_meta($product_id , 'ztools_currency_input' , true));
 	$currency_special_rate = floatval(get_post_meta($product_id , 'ztools_special_currency_input' , true));
@@ -38,13 +38,13 @@ function set_product_price($product_id){
 function calc_currency_rate($currency_type){
 	switch ($currency_type){
 		case 'dollar':
-			$currency_rate = get_option('Ztools_exrate_dollar', '');
+			$currency_rate = get_option('Ztools_exrate_dollar', 25000);
 			break;
 		case 'yuan':
-			$currency_rate = get_option('Ztools_exrate_yuan', '');
+			$currency_rate = get_option('Ztools_exrate_yuan', 3900);
 			break;
 		default:
-			$currency_rate = get_option('Ztools_exrate_dollar', '');
+			$currency_rate = get_option('Ztools_exrate_dollar', 25000);
 	}
 	return $currency_rate;
 }
@@ -59,23 +59,6 @@ function update_all_woo_prices(){
 			set_product_price($product->ID);
 		}
 	}
-}
-
-function secureLink($url , $post , $str){
-  $input = get_post_meta($post->ID, $str, true);
-  $is_url = filter_var($url, FILTER_VALIDATE_URL);
-  if ($url !== '' && $is_url ){
-	$url = esc_url( $url, null, 'display' );
-	$url = trim($url, '/');
-	if (!preg_match('#^http(s)?://#', $url)) {
-	  $input = 'http://' . $url;
-	}
-	$urlParts = parse_url($input);
-	$domain = preg_replace('/^www\./', '', $urlParts['host']);
-	return $domain;
-  }else{
-	return 0;
-  }
 }
 
 

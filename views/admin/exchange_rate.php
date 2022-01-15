@@ -9,13 +9,13 @@ function ztools_product_options(){
 	$currency_type = get_post_meta(get_the_ID() , 'ztools_currency_type' , true);
 	switch ($currency_type){
 		case 'dollar':
-			$currency_rate = get_option('Ztools_exrate_dollar', '');
+			$currency_rate = get_option('Ztools_exrate_dollar', 25000);
 			break;
 		case 'yuan':
-			$currency_rate = get_option('Ztools_exrate_yuan', '');
+			$currency_rate = get_option('Ztools_exrate_yuan', 3900);
 			break;
 		default:
-			$currency_rate = get_option('Ztools_exrate_dollar', '');
+			$currency_rate = get_option('Ztools_exrate_dollar', 25000);
 	}
 	$regular_price = round((floatval(get_post_meta( get_the_ID(), 'ztools_currency_input', true )) * $currency_rate) , -3);
 	$sale_price = round((floatval(get_post_meta( get_the_ID(), 'ztools_special_currency_input', true )) * $currency_rate) , -3);
