@@ -1,10 +1,13 @@
 <?php if ( ! defined( 'ABSPATH' ) ) {die( 'Invalid request.' ); }
 
+require_once plugin_dir_path( __FILE__ ) . '../env.php';
+
+
 
 function set_product_price($product_id){
 	// Calculate Currency Rate
-	$dollarValue = get_option('Ztools_exrate_dollar', 25000);
-	$yuanValue = get_option('Ztools_exrate_yuan', 3900);
+	$dollarValue = get_option('Ztools_exrate_dollar', getenv('DEFAULT_DOLLAR_EXCHANGE_RATE'));
+	$yuanValue = get_option('Ztools_exrate_yuan', getenv('DEFAULT_YUAN_EXCHANGE_RATE'));
 	$currency_type = get_post_meta($product_id , 'ztools_currency_type' , true);
 	$currency_rate = floatval(get_post_meta($product_id , 'ztools_currency_input' , true));
 	$currency_special_rate = floatval(get_post_meta($product_id , 'ztools_special_currency_input' , true));
@@ -38,13 +41,13 @@ function set_product_price($product_id){
 function calc_currency_rate($currency_type){
 	switch ($currency_type){
 		case 'dollar':
-			$currency_rate = get_option('Ztools_exrate_dollar', 25000);
+			$currency_rate = get_option('Ztools_exrate_dollar', getenv('DEFAULT_DOLLAR_EXCHANGE_RATE'));
 			break;
 		case 'yuan':
-			$currency_rate = get_option('Ztools_exrate_yuan', 3900);
+			$currency_rate = get_option('Ztools_exrate_yuan', getenv('DEFAULT_YUAN_EXCHANGE_RATE'));
 			break;
 		default:
-			$currency_rate = get_option('Ztools_exrate_dollar', 25000);
+			$currency_rate = get_option('Ztools_exrate_dollar', getenv('DEFAULT_DOLLAR_EXCHANGE_RATE'));
 	}
 	return $currency_rate;
 }

@@ -50,7 +50,6 @@ add_action("admin_init", function(){
 	/////////////////////////////////
 	register_setting('exchange_rate_settings_options', 'Ztools_exrate_dollar', 'sanitize_text_field');
 	register_setting('exchange_rate_settings_options', 'Ztools_exrate_yuan', 'sanitize_text_field');
-
 });
 
 
