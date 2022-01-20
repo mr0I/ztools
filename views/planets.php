@@ -66,21 +66,22 @@ get_header();
 			$args = $args + $sortarray;
 		  }
 
+
 		  if (isset($_GET["search"])) {
 			$search = $_GET["search"];
 			$args['s'] = $search;
+			$args2['s'] = $search;
 		  }
-
 
 		  $query = new WP_Query($args);
 		  $query2 = new WP_Query($args2);
-		  if ($query->have_posts()) :
 		  $count_all_posts = $query2->post_count;
+
+		  if ($query->have_posts()) :
 		  $terms = get_the_terms($post_id, 'zcategory');
 		  ?>
-
             <div class="archive-blog__header">
-                <form id="search" action="" name="formsearch" method="GET">
+                <form id="search" name="formsearch" method="GET">
                     <div class="archive-blog__header__top">
                         <div class="archive-blog__header__top__title">
                             <i class="dn-menu2"></i>
@@ -115,6 +116,11 @@ get_header();
 
             <div class="archive-blog__list">
                 <div class="row">
+                  <?php
+                  if ($count_all_posts === 0 ){
+                      ?><div class="row"><p>محصولی یافت نشد</p></div><?php
+                  }
+                  ?>
 				  <?php while ($query->have_posts()) : $query->the_post();
 				  $post_id = $post->ID;
 				  $post_image = get_the_post_thumbnail_url($post_id);
