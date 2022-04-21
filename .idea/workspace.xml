@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/planets.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/planets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/planet.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,28 +16,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/env.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="154">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/planet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="256" column="31" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="31" />
+            <state relative-caret-position="88">
+              <caret line="461" lean-forward="true" selection-start-line="461" selection-end-line="461" />
+              <folding>
+                <element signature="e#9322#11129#0#PHP" />
+                <element signature="e#11285#13064#0#PHP" />
+                <element signature="e#13212#13514#0#PHP" />
+                <element signature="e#13897#20728#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/planets.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/Show_planets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="113" column="23" lean-forward="true" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
+            <state relative-caret-position="220">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
-                <element signature="e#12287#12998#0#HTML" />
+                <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -55,15 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>author</find>
-      <find>pagename</find>
-      <find>author_search</find>
-      <find>flush_rules</find>
-      <find>$my_custom_title</find>
-      <find>get_excerpt_content</find>
-      <find>post_like_count</find>
-      <find>get_field</find>
-      <find>Mahdi.h</find>
       <find>AUTHOR_POSTS_PAGINATE_COUNT</find>
       <find>get_the_ID</find>
       <find>$post_author</find>
@@ -85,6 +87,15 @@
       <find>25000</find>
       <find>$count_all_posts</find>
       <find>short</find>
+      <find>main-page-wrapper</find>
+      <find>.wave</find>
+      <find>font-face</find>
+      <find>@font-face</find>
+      <find>IRANSans</find>
+      <find>add_shortcode</find>
+      <find>wp_enqueue_scripts</find>
+      <find>wp_ajax</find>
+      <find>add_action( 'wp_ajax_</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
@@ -108,7 +119,6 @@
         <option value="$PROJECT_DIR$/views/Add_planet.php" />
         <option value="$PROJECT_DIR$/views/Show_planets.php" />
         <option value="$PROJECT_DIR$/env.example.php" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/admin/admin-styles.css" />
         <option value="$PROJECT_DIR$/views/admin/metabox_echo.php" />
         <option value="$PROJECT_DIR$/views/admin/metabox.php" />
@@ -125,8 +135,10 @@
         <option value="$PROJECT_DIR$/inc/functions.php" />
         <option value="$PROJECT_DIR$/views/admin/exchange_rate.php" />
         <option value="$PROJECT_DIR$/env.php" />
-        <option value="$PROJECT_DIR$/planet.php" />
         <option value="$PROJECT_DIR$/views/planets.php" />
+        <option value="$PROJECT_DIR$/views/rest_btn.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/planet.php" />
       </list>
     </option>
   </component>
@@ -142,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,15 +161,11 @@
               <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
               <item name="ztools" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ztools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ztools" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,7 +271,18 @@
       <workItem from="1642247837715" duration="1637000" />
       <workItem from="1642313438948" duration="2418000" />
       <workItem from="1642410036731" duration="1997000" />
-      <workItem from="1642667169705" duration="2929000" />
+      <workItem from="1642667169705" duration="2966000" />
+      <workItem from="1643016417041" duration="17000" />
+      <workItem from="1643630841187" duration="137000" />
+      <workItem from="1644040295727" duration="45000" />
+      <workItem from="1644063698384" duration="28000" />
+      <workItem from="1644843878796" duration="19000" />
+      <workItem from="1644844018771" duration="25000" />
+      <workItem from="1645940292346" duration="6876000" />
+      <workItem from="1646052506074" duration="966000" />
+      <workItem from="1649051884843" duration="2511000" />
+      <workItem from="1649740188110" duration="1785000" />
+      <workItem from="1650525611342" duration="4993000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -291,19 +309,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247783000" />
+    <option name="totallyTimeSpent" value="265222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15191898" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16950959" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.9665552" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" visible="true" weight="0.2742475" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.2742475" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
@@ -318,6 +336,28 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15671642" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.9665552" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" visible="true" weight="0.2742475" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -382,13 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/Add_planet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/libs/jdatetime.class.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -415,16 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#3791#5588#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/admin/adminScripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1600">
@@ -445,16 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/Show_planets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Push.bat">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -462,20 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ztools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="491" column="14" selection-start-line="491" selection-start-column="14" selection-end-line="491" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -513,33 +512,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/author_posts.php">
+    <entry file="file://$PROJECT_DIR$/views/Add_planet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ztools-styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/author_posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/rest_btn.php" />
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="367" lean-forward="true" selection-start-line="367" selection-end-line="367" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/planets.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Show_planets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="n#wp_bootstrap4_pagination#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ztools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#6#290#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/env.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="154">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/planet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="256" column="31" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/planets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="113" column="23" lean-forward="true" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
+        <state relative-caret-position="88">
+          <caret line="461" lean-forward="true" selection-start-line="461" selection-end-line="461" />
           <folding>
-            <element signature="e#12287#12998#0#HTML" />
+            <element signature="e#9322#11129#0#PHP" />
+            <element signature="e#11285#13064#0#PHP" />
+            <element signature="e#13212#13514#0#PHP" />
+            <element signature="e#13897#20728#0#PHP" />
           </folding>
         </state>
       </provider>
