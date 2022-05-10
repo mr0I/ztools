@@ -8,10 +8,9 @@ $show_posts_link = get_option('ztools_show_planets_url','');
 	<div class="alert alert-danger" role="alert" id="planet_access_alert">
 		<?php echo __('You should login before accessing this page.' , 'ztools'); ?> <a href="https://sisoog.com/login/" class="alert-link"><?php echo __('Login to sisoog' , 'ztools'); ?></a>
 	</div>
-	<?php elseif($_GET['post_id'] == null) :?>
+	<?php elseif(! isset($_GET['post_id'] )) :?>
 		<script type="text/javascript"> window.location.replace('https://sisoog.com/my_planet/'); </script>
 		<?php else:?>
-
 			<?php
 			global $post_id , $post;
 			$post_id = $_GET['post_id'];

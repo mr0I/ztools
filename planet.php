@@ -492,8 +492,6 @@ add_action( 'wp_ajax_nopriv_github_oauth', 'github_oauth_callback' );
 
 
 
-
-
 // Add Widget
 class Ztools_last_planets extends WP_Widget{
 
