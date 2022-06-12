@@ -430,68 +430,6 @@ add_action( 'wp_ajax_nopriv_planet_remove', 'planet_remove_callback' );
 
 
 
-function github_oauth_callback(){
-
-  $github_code =  ($_GET['code']) ? $_GET['code'] : false;
-
-  if ($github_code) {
-	$url  = "https://github.com/login/oauth/access_token";
-	$data = array(
-		"client_id" => "c8a1adbd01fdf22ffdcf",
-		"client_secret" => "14da0d501bb051cf929488ee439ee90062927b9e",
-		"code" => $github_code,
-    );
-	$args = array(
-		"method"      => "POST",
-		"timeout"     => 45,
-		"sslverify"   => false,
-		"headers"     => array(
-			"user-agent"=>$_SERVER["HTTP_USER_AGENT"],
-			"Accept" => "application/json",
-			"Content-Type"  => "application/json",
-		),
-		"body"        => json_encode($data),
-	);
-	$request = wp_remote_post( $url, $args );
-
-	if ( is_wp_error( $request ) || wp_remote_retrieve_response_code( $request ) != 200 ) {
-	  echo json_encode(['status' => 'Error', 'msg' => 'error in request']);
-	  exit();
-	}
-	$response = json_decode(wp_remote_retrieve_body( $request ) , true);
-
-
-//	var_dump(json_decode($response , true)) ;
-	echo $response['access_token'];
-    exit();
-
-
-
-	if (!empty($content['access_token'])) {
-	  $access_token = $content['access_token'];
-
-	  $content = httpRequest(GITHUB_URL_API, array(), "GET", array(
-		  "Authorization" => "token {$access_token}",
-	  ));
-
-	  if (!empty($content['login']) && !empty($content['node_id'])) {
-		$response_msg = ["user" => $content['login'], "msg" => "successfully logged in (:", "status" => 1];
-		setcookie("auth" , json_encode($response_msg));
-		header("Location: http://{$_SERVER['SERVER_NAME']}");
-	  }
-	}
-  }
-
-
-  //$data=array( 'code' => $_GET['code'] ?? 10);
-  //echo json_encode($data);
-  exit();
-}
-add_action( 'wp_ajax_github_oauth', 'github_oauth_callback' );
-add_action( 'wp_ajax_nopriv_github_oauth', 'github_oauth_callback' );
-
-
-
 // Add Widget
 class Ztools_last_planets extends WP_Widget{
 
