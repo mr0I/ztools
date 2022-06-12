@@ -730,6 +730,12 @@ add_action('template_redirect', function(){
 	exit;
   }
 });
+//add_filter( 'query_vars', 'add_test_query_vars');
+//function add_test_query_vars($vars)
+//{
+//  $vars[] = 'm';
+//  return $vars;
+//}
 /* Add Rewrite rules */
 
 

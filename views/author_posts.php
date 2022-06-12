@@ -2,6 +2,7 @@
 
 require_once plugin_dir_path( __FILE__ ) . '../env.php';
 
+
 global $wpdb;
 $usersTable = $wpdb->prefix . 'users';
 $postsTable = $wpdb->prefix . 'posts';
@@ -41,7 +42,6 @@ if (isset($_GET["filter"])) {
   $queryType = 'simple';
 }
 
-
 if ($queryType==='simple'){
   $author_posts = $wpdb->get_results( "SELECT * FROM $postsTable WHERE post_author='$user_id' AND post_status='publish' AND post_type='post' 
     ORDER BY $orderBy $order LIMIT $offset,$limit");
@@ -56,10 +56,6 @@ if ($queryType==='simple'){
 $num_of_pages = ceil( $total / $limit );
 $numrow = ($pagenum - 1) * $offset + 1;
 
-
-// Set Custom Title
-global $authorPostsTitle;
-$authorPostsTitle = ' نوشته های ' . $author_name;
 get_header();
 ?>
 
