@@ -4,7 +4,6 @@
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/planet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/author_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/author_posts.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/planet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="726" column="39" lean-forward="true" selection-start-line="726" selection-start-column="39" selection-end-line="726" selection-end-column="39" />
-              <folding>
-                <element signature="e#13739#15327#0#PHP" />
-              </folding>
+            <state relative-caret-position="646">
+              <caret line="697" selection-start-line="691" selection-end-line="697" />
             </state>
           </provider>
         </entry>
@@ -31,9 +27,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +114,8 @@
         <option value="$PROJECT_DIR$/views/rest_btn.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/views/Edit_planet.php" />
-        <option value="$PROJECT_DIR$/planet.php" />
         <option value="$PROJECT_DIR$/views/author_posts.php" />
+        <option value="$PROJECT_DIR$/planet.php" />
       </list>
     </option>
   </component>
@@ -281,7 +274,8 @@
       <workItem from="1654686984621" duration="631000" />
       <workItem from="1654921007859" duration="5313000" />
       <workItem from="1655014025843" duration="147000" />
-      <workItem from="1655017188120" duration="3045000" />
+      <workItem from="1655017188120" duration="3719000" />
+      <workItem from="1655096230477" duration="644000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -308,15 +302,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281470000" />
+    <option name="totallyTimeSpent" value="282788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17430703" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17590618" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.9665552" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.9665552" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.2742475" />
@@ -563,23 +558,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/planet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="697" selection-start-line="691" selection-end-line="697" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/author_posts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="726" column="39" lean-forward="true" selection-start-line="726" selection-start-column="39" selection-end-line="726" selection-end-column="39" />
-          <folding>
-            <element signature="e#13739#15327#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
