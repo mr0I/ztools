@@ -9,9 +9,11 @@ $postsTable = $wpdb->prefix . 'posts';
 $postMetaTable = $wpdb->prefix . 'postmeta';
 
 $user_id = $wpdb->get_var( "SELECT id FROM $usersTable WHERE display_name='$author_name' ");
+$user = get_userdata($user_id);
 $pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
 $limit =getenv('AUTHOR_POSTS_PAGINATE_COUNT'); // number of rows in page
 $offset = ( $pagenum - 1 ) * $limit;
+
 
 // sort options
 if (isset($_GET["filter"])) {
@@ -78,7 +80,7 @@ get_header();
                         <h3> نوشته های  <?= $author_name ?> </h3>
                         <span><?= $total ?>  مورد </span>
                     </div>
-                    <p class="ztools-author-profile"><a href="<?= site_url().'/user/'.$author_name ?>">پروفایل نویسنده</a></p>
+                    <p class="ztools-author-profile"><a href="<?= site_url().'/user/'.$user->data->user_login; ?>">پروفایل نویسنده</a></p>
                 </div>
                 <div class="archive-blog__header__bottom">
                     <form action="" method="get" class="archive-blog__header__bottom__filter">
