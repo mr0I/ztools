@@ -20,11 +20,11 @@ if (isset($_GET["filter"])) {
   $sort = $_GET["filter"];
 
   if ($sort == "newest") {
-	$orderBy = 'ID';
+	$orderBy = 'post_date';
 	$order = 'DESC';
 	$queryType = 'simple';
   } elseif ($sort == "topviews") {
-	$orderBy = 'ID';
+	$orderBy = 'post_date';
 	$order = 'DESC';
 	$metaKey = 'views';
 	$queryType = 'join';
@@ -33,13 +33,13 @@ if (isset($_GET["filter"])) {
 	$order = 'DESC';
 	$queryType = 'simple';
   } elseif ($sort == "toplikes") {
-	$orderBy = 'ID';
+	$orderBy = 'post_date';
 	$order = 'DESC';
 	$metaKey = 'post_like';
 	$queryType = 'join';
   }
 } else {
-  $orderBy = 'ID';
+  $orderBy = 'post_date';
   $order = 'DESC';
   $queryType = 'simple';
 }
