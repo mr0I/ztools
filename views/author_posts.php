@@ -80,7 +80,10 @@ get_header();
                         <h3> نوشته های  <?= $author_name ?> </h3>
                         <span><?= $total ?>  مورد </span>
                     </div>
-                    <p class="ztools-author-profile"><a href="<?= site_url().'/user/'.$user->data->user_login; ?>">پروفایل نویسنده</a></p>
+                      <?php
+                          $username = str_replace(' ','-',$user->data->user_login);
+                      ?>
+                    <p class="ztools-author-profile"><a href="<?= site_url().'/user/'. $username; ?>">پروفایل نویسنده</a></p>
                 </div>
                 <div class="archive-blog__header__bottom">
                     <form action="" method="get" class="archive-blog__header__bottom__filter">
