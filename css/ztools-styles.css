@@ -487,11 +487,11 @@
 		color: #eeeeee;
 	}
 	.ztools-author-profile > a{
-		color: #841d7a;
+		color: #841d7a !important;
 		font-weight: bold;
-		font-size: 115%;
+		font-size: 1em;
 		padding: 0 10px;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	/* End Author Posts */
 

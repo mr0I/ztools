@@ -45,7 +45,7 @@ define('PLANET_CSS', plugin_dir_url(__FILE__) . 'css/');
  	 wp_enqueue_media();
  	// styles
  	wp_enqueue_style( 'chosen_css', PLANET_CSS . 'chosen/chosen.css');
- 	wp_enqueue_style( 'styles', PLANET_CSS . 'ztools-styles.css');
+ 	wp_enqueue_style( 'styles', PLANET_CSS . 'ztools-styles.css' ,array(), '6.0.2');
  });
 
 
