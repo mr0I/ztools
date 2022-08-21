@@ -655,7 +655,7 @@ add_action('widgets_init', function(){
 add_action('init', function (){
   add_rewrite_rule(
 	  '@([^/]+)/?$',
-	  'index.php?pagename=author_search&s=$matches[1]',
+	  'index.php?pagename=author_search&composer=$matches[1]',
 	  'top'
   );
 });
@@ -663,17 +663,15 @@ add_action('template_redirect', function(){
   $pageName = get_query_var('pagename');
 
   if ( $pageName == 'author_search' ) {
-	$author_name = get_query_var('s');
+	$author_name = urldecode(get_query_var('composer'));
 	include(plugin_dir_path(__FILE__) . 'views/author_posts.php');
 	exit;
   }
 });
-//add_filter( 'query_vars', 'add_test_query_vars');
-//function add_test_query_vars($vars)
-//{
-//  $vars[] = 'm';
-//  return $vars;
-//}
+add_filter( 'query_vars', function ($vars) {
+  $vars[] = 'composer';
+  return $vars;
+});
 /* Add Rewrite rules */
 
 
