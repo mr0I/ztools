@@ -10,7 +10,7 @@ $postMetaTable = $wpdb->prefix . 'postmeta';
 $user_id = $wpdb->get_var( "SELECT id FROM $usersTable WHERE display_name='$author_name' ");
 $user = get_userdata($user_id);
 $pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
-$limit = getenv('AUTHOR_POSTS_PAGINATE_COUNT'); // number of rows in page
+$limit = getenv('AUTHOR_POSTS_PAGINATE_COUNT') ?? 9999999; // number of rows in page
 $offset = ( $pagenum - 1 ) * $limit;
 
 // sort options

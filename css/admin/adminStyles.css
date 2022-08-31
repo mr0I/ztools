@@ -76,16 +76,6 @@
 .dash_menu_warpper .radio{
     display:none ;
 }
-.dash_menu_warpper .button-primary{
-    background: orangered;
-    border-color: orangered;
-    padding: 5px 50px;
-    font-weight: bold;
-}
-.dash_menu_warpper .button-primary:hover{
-    background: orange;
-    border-color: orange;
-}
 #one:checked ~ .panels #one-panel,
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel{
